@@ -1,0 +1,29 @@
+.event {
+
+  &--active {
+    .event__title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.event__title {
+  margin: 0;
+  @include main-text(30px, 35px, $semibold);
+  color: $main-color;
+}
+
+.event__description {
+  margin: 0;
+  @include main-text(18px, 21px, $normal);
+  color: $main-text-color;
+}
+
+.event__tags {
+  @include reset-list;
+}
+
+.event__tag {
+  @include additional-text(18px, 21px, $normal);
+  color: $accent-color;
+}
