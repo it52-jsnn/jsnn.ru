@@ -1,3 +1,8 @@
 .about {
-  background-color: teal;
+
+  h2 {
+    margin: 0;
+    @include main-text(18px, 21px, $normal);
+    color: $main-color;
+  }
 }

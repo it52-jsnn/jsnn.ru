@@ -1,5 +1,5 @@
 .page-header {
-  background-color: red;
+  background-color: yellow;
 }
 
 .page-header {
@@ -7,4 +7,12 @@
     margin: 0;
     @include main-text(82px, 97px, $bold);
   }
+}
+
+.page-header__title {
+  @include main-text(24px, 28px, $bold);
+}
+
+.page-header__description {
+  @include main-text(14px, 20px, $normal);
 }

@@ -14,13 +14,29 @@
         <div class="logo__wrapper">
           <img src="./img/logo.svg" width="160" height="160" alt="JSNN">
         </div>
-        <span>JSNN</span>
-        <span>Сообщество разработчиков Нижнего Новгорода</span>
+        <span class="page-header__title">JSNN</span>
+        <span class="page-header__description">Сообщество разработчиков Нижнего Новгорода</span>
       </a>
     </section>
-    <h1>Мероприятия</h1>
+    <nav>
+      <section class="filters">
+        <h2>Мероприятия</h2>
+        <label for="future-events">
+          <input type="checkbox" id="future-events" name="future" checked="">
+          <span>Предстоящие</span>
+        </label>
+        <label for="past-events">
+          <input type="checkbox" id="past-events" name="past">
+          <span>Прошедшие</span>
+        </label>
+      </section>
+      <section class="about">
+        <a href="#" class="about__link"><h2>О сообществе</h2></a>
+      </section>
+    </nav>
   </header>
   <main>
+    <h1>Мероприятия</h1>
     <section class="events">
       <ul class="events__list">
         <li class="events__item event event--active">
@@ -80,21 +96,9 @@
         </li>
       </ul>
     </section>
-    <section class="filters">
-      <h2>Мероприятия</h2>
-      <label for="future-events">
-        <input type="checkbox" id="future-events" name="future" checked="">
-        <span>Предстоящие</span>
-      </label>
-      <label for="past-events">
-        <input type="checkbox" id="past-events" name="past">
-        <span>Прошедшие</span>
-      </label>
-    </section>
-    <section class="about">
-      <h2>О сообществе</h2>
-    </section>
-    <section class="contacts">
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts__social-list">
         <li>
@@ -108,8 +112,15 @@
         </li>
       </ul>
       <a href="mailto:me@r3nya.ru" class="contacts__mail">me@r3nya.ru</a>
-      <span class="contacts__copyright">Design by <a href="#">Gala Dedyukhina</a></span>
+      <ul class="page-footer__copyright copyright">
+        <li>
+          <span class="copyright__text">Design by <a href="#" class="copyright__link">Gala Dedyukhina</a></span>
+        </li>
+        <li>
+          <span class="copyright__text">Develop by <a href="#" class="copyright__link">Liga A</a></span>
+        </li>
+      </ul>
     </section>
-  </main>
+  </footer>
 </body>
 </html>

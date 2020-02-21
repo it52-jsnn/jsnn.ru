@@ -1,0 +1,14 @@
+.copyright {
+  @include reset-list;
+}
+
+.copyright__text {
+  @include additional-text(14px, 16px, $normal);
+  color: $additional-text-color;
+}
+
+.copyright__link {
+  @include additional-text(14px, 16px, $normal);
+  color: $link-color;
+  cursor: pointer;
+}

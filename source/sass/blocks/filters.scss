@@ -1,3 +1,13 @@
 .filters {
-  background-color: green;
+  border: 2px solid green;
+
+  h2 {
+    @include main-text(18px, 21px, $bold);
+    color: $main-color;
+  }
+
+  label {
+    @include main-text(14px, 16px, $normal);
+    color: $main-color;
+  }
 }
