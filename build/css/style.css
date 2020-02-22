@@ -48,24 +48,39 @@ html {
 .page-header {
   background-color: yellow; }
 
-.page-header h1 {
-  margin: 0;
-  font-family: "Lucida Grande", "Helvetica", sans-serif;
-  font-weight: 700;
-  font-size: 82px;
-  line-height: 97px; }
-
 .page-header__title {
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px; }
+  @media (max-width: 767px) {
+    .page-header__title {
+      display: none; } }
 
 .page-header__description {
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px; }
+  @media (max-width: 767px) {
+    .page-header__description {
+      font-family: "Lucida Grande", "Helvetica", sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 14px; } }
+
+.page-main h1 {
+  margin: 0;
+  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 97px; }
+  @media (max-width: 767px) {
+    .page-main h1 {
+      font-family: "Lucida Grande", "Helvetica", sans-serif;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 23px; } }
 
 .logo__wrapper {
   width: 160px;
@@ -83,6 +98,14 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  .contacts h2 {
+    display: none; }
+    @media (max-width: 767px) {
+      .contacts h2 {
+        font-family: "Lucida Grande", "Helvetica", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 23px; } }
 
 .events__list {
   padding: 0;
@@ -94,11 +117,17 @@ html {
 
 .event__title {
   margin: 0;
-  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 35px;
   color: #2f2f2f; }
+  @media (max-width: 767px) {
+    .event__title {
+      font-family: "Work Sans", "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px; } }
 
 .event__description {
   margin: 0;
@@ -107,11 +136,20 @@ html {
   font-size: 18px;
   line-height: 21px;
   color: #6a6a6a; }
+  @media (max-width: 767px) {
+    .event__description {
+      font-family: "Lucida Grande", "Helvetica", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px; } }
 
 .event__tags {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media (max-width: 767px) {
+    .event__tags {
+      display: none; } }
 
 .event__tag {
   font-family: "Work Sans", "Open Sans", sans-serif;
@@ -146,6 +184,12 @@ html {
   font-size: 14px;
   line-height: 16px;
   color: #4d4d4d; }
+  @media (max-width: 767px) {
+    .copyright__text {
+      font-family: "Work Sans", "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px; } }
 
 .copyright__link {
   font-family: "Work Sans", "Open Sans", sans-serif;
@@ -153,7 +197,14 @@ html {
   font-size: 14px;
   line-height: 16px;
   color: #039be5;
+  text-decoration: underline;
   cursor: pointer; }
+  @media (max-width: 767px) {
+    .copyright__link {
+      font-family: "Work Sans", "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px; } }
 
 .page-footer {
   background-color: cornsilk; }

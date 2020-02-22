@@ -5,10 +5,20 @@
 .copyright__text {
   @include additional-text(14px, 16px, $normal);
   color: $additional-text-color;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(16px, 19px, $normal);
+  }
 }
 
 .copyright__link {
   @include additional-text(14px, 16px, $normal);
   color: $link-color;
+  text-decoration: underline;
+
   cursor: pointer;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(16px, 19px, $normal);
+  }
 }

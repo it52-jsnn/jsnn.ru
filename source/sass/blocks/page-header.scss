@@ -2,17 +2,18 @@
   background-color: yellow;
 }
 
-.page-header {
-  h1 {
-    margin: 0;
-    @include main-text(82px, 97px, $bold);
-  }
-}
-
 .page-header__title {
   @include main-text(24px, 28px, $bold);
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .page-header__description {
   @include main-text(14px, 20px, $normal);
+
+  @media (max-width: $mobile-max) {
+    @include main-text(10px, 14px, $bold);
+  }
 }

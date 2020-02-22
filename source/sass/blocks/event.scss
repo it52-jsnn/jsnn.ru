@@ -9,18 +9,30 @@
 
 .event__title {
   margin: 0;
-  @include main-text(30px, 35px, $semibold);
+  @include additional-text(30px, 35px, $semibold);
   color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(24px, 28px, $semibold);
+  }
 }
 
 .event__description {
   margin: 0;
   @include main-text(18px, 21px, $normal);
   color: $main-text-color;
+
+  @media (max-width: $mobile-max) {
+    @include main-text(16px, 22px, $normal);
+  }
 }
 
 .event__tags {
   @include reset-list;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .event__tag {

@@ -1,8 +1,7 @@
-.contacts {
-  @include reset-list;
-
-  h2 {
-    display: none;
+.page-main {
+  h1 {
+    margin: 0;
+    @include main-text(82px, 97px, $bold);
 
     @media (max-width: $mobile-max) {
       @include main-text(38px, 23px, $bold);
