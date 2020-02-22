@@ -27,8 +27,12 @@
   overflow: hidden; }
 
 body {
+  padding-top: 60px;
   margin: 0;
-  background-color: #f2f2f2; }
+  display: grid;
+  grid-template-columns: calc(100% / 6) calc(100% - 100% / 6 - 100% / 16);
+  grid-column-gap: calc(100% / 16);
+  background-color: #ffffff; }
 
 a {
   text-decoration: none; }
@@ -46,6 +50,10 @@ html {
   box-sizing: inherit; }
 
 .page-header {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  padding-left: 12.5%;
   background-color: yellow; }
 
 .page-header__title {
@@ -69,18 +77,25 @@ html {
       font-size: 10px;
       line-height: 14px; } }
 
-.page-main h1 {
-  margin: 0;
-  font-family: "Lucida Grande", "Helvetica", sans-serif;
-  font-weight: 700;
-  font-size: 82px;
-  line-height: 97px; }
-  @media (max-width: 767px) {
-    .page-main h1 {
-      font-family: "Lucida Grande", "Helvetica", sans-serif;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 23px; } }
+.page-main {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 307px 100%; }
+  .page-main h1 {
+    grid-row: 1;
+    align-self: end;
+    margin: 0;
+    font-family: "Lucida Grande", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 97px; }
+    @media (max-width: 767px) {
+      .page-main h1 {
+        font-family: "Lucida Grande", "Helvetica", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 23px; } }
 
 .logo__wrapper {
   width: 160px;
@@ -107,10 +122,26 @@ html {
         font-size: 38px;
         line-height: 23px; } }
 
+.contacts__email {
+  font-family: "Work Sans", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #039be5;
+  text-decoration: underline;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .contacts__email {
+      font-family: "Work Sans", "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px; } }
+
 .events__list {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  grid-row: 2; }
 
 .event--active .event__title {
   text-decoration: underline; }
@@ -152,6 +183,8 @@ html {
       display: none; } }
 
 .event__tag {
+  display: inline-block;
+  margin-right: 10px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -207,4 +240,8 @@ html {
       line-height: 19px; } }
 
 .page-footer {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  padding-left: 12.5%;
   background-color: cornsilk; }

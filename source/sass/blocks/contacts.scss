@@ -9,3 +9,15 @@
     }
   }
 }
+
+.contacts__email {
+  @include additional-text(14px, 16px, $normal);
+  color: $link-color;
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(16px, 19px, $normal);
+  }
+}
