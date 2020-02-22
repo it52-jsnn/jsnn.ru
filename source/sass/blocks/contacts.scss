@@ -10,7 +10,36 @@
   }
 }
 
+.contacts__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  grid-template-rows: 32px;
+  grid-column-gap: 28px;
+
+  @include reset-list;
+  margin-bottom: 15px;
+}
+
+.contacts__social-link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .contacts__email {
+  display: inline-block;
+  margin-bottom: 52px;
+
   @include additional-text(14px, 16px, $normal);
   color: $link-color;
   text-decoration: underline;

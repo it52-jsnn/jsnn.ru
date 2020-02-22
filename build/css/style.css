@@ -29,7 +29,9 @@
 body {
   padding-top: 60px;
   margin: 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: calc(100% / 6) calc(100% - 100% / 6 - 100% / 16);
   grid-template-columns: calc(100% / 6) calc(100% - 100% / 6 - 100% / 16);
   grid-column-gap: calc(100% / 16);
   background-color: #ffffff; }
@@ -50,9 +52,12 @@ html {
   box-sizing: inherit; }
 
 .page-header {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
   grid-row: 1;
-  align-self: start;
+  -ms-grid-row-align: start;
+      align-self: start;
   padding-left: 12.5%;
   background-color: yellow; }
 
@@ -78,13 +83,20 @@ html {
       line-height: 14px; } }
 
 .page-main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
+  -ms-grid-column: 2;
   grid-column: 2;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 307px 100%;
   grid-template-rows: 307px 100%; }
   .page-main h1 {
+    -ms-grid-row: 1;
     grid-row: 1;
-    align-self: end;
+    -ms-grid-row-align: end;
+        align-self: end;
     margin: 0;
     font-family: "Lucida Grande", "Helvetica", sans-serif;
     font-weight: 700;
@@ -122,7 +134,32 @@ html {
         font-size: 38px;
         line-height: 23px; } }
 
+.contacts__social-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (32px)[3];
+  grid-template-columns: repeat(3, 32px);
+  -ms-grid-rows: 32px;
+  grid-template-rows: 32px;
+  grid-column-gap: 28px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 15px; }
+
+.contacts__social-link:hover, .contacts__social-link:focus {
+  opacity: 0.6; }
+
+.contacts__social-link:active {
+  opacity: 0.3; }
+
+.contacts__social-link svg {
+  width: 32px;
+  height: 32px; }
+
 .contacts__email {
+  display: inline-block;
+  margin-bottom: 52px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -141,6 +178,7 @@ html {
   padding: 0;
   margin: 0;
   list-style: none;
+  -ms-grid-row: 2;
   grid-row: 2; }
 
 .event--active .event__title {
@@ -240,8 +278,11 @@ html {
       line-height: 19px; } }
 
 .page-footer {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
   grid-row: 2;
-  align-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
   padding-left: 12.5%;
   background-color: cornsilk; }
