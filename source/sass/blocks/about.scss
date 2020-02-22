@@ -1,4 +1,15 @@
-.about {
+.about__link {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   h2 {
     margin: 0;

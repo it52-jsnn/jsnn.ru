@@ -130,13 +130,20 @@ html {
         font-size: 38px;
         line-height: 23px; } }
 
-.about h2 {
-  margin: 0;
-  font-family: "Lucida Grande", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #2f2f2f; }
+.about__link {
+  display: inline-block;
+  cursor: pointer; }
+  .about__link:hover, .about__link:focus {
+    opacity: 0.6; }
+  .about__link:active {
+    opacity: 0.3; }
+  .about__link h2 {
+    margin: 0;
+    font-family: "Lucida Grande", "Helvetica", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2f2f2f; }
 
 .contacts {
   padding: 0;
@@ -247,19 +254,53 @@ html {
   color: #c49612; }
 
 .filters {
-  border: 2px solid green; }
+  margin-bottom: 50px; }
   .filters h2 {
+    margin: 0;
+    margin-bottom: 20px;
     font-family: "Lucida Grande", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #2f2f2f; }
+  .filters .filters__input-group {
+    margin-bottom: 12px; }
+    .filters .filters__input-group:last-of-type {
+      margin-bottom: 0; }
   .filters label {
+    position: relative;
+    display: block;
+    padding-left: 25px;
     font-family: "Lucida Grande", "Helvetica", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #2f2f2f; }
+    color: #2f2f2f;
+    cursor: pointer; }
+    .filters label:hover {
+      opacity: 0.6; }
+    .filters label:active {
+      opacity: 0.3; }
+    .filters label::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-checkbox-off.svg"); }
+  .filters input[type="checkbox"] {
+    display: none; }
+  .filters input[type="checkbox"]:checked + label::before {
+    display: none; }
+  .filters input[type="checkbox"]:checked + label::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-checkbox-on.svg"); }
 
 .copyright {
   padding: 0;

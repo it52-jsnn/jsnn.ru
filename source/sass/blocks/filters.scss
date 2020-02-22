@@ -1,13 +1,68 @@
 .filters {
-  border: 2px solid green;
+  margin-bottom: 50px;
 
   h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
     @include main-text(18px, 21px, $bold);
     color: $main-color;
   }
 
+  & .filters__input-group {
+    margin-bottom: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   label {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+
     @include main-text(14px, 16px, $normal);
     color: $main-color;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-checkbox-off.svg");
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-checkbox-on.svg");
+    }
   }
 }
