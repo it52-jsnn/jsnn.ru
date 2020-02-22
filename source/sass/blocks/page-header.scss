@@ -5,12 +5,38 @@
 
   padding-left: 12.5%;
 
-  background-color: yellow;
-
 }
 
+.page-header__logo-link {
+  display: inline-block;
+  margin-bottom: 74px;
+}
+
+.page-header__logo-link[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-wrapper {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 18px;
+}
+
+
 .page-header__title {
+  display: block;
+  margin-bottom: 7px;
   @include main-text(24px, 28px, $bold);
+  color: $main-color;
 
   @media (max-width: $mobile-max) {
     display: none;
@@ -18,7 +44,10 @@
 }
 
 .page-header__description {
+  display: inline-block;
+  max-width: 145px;
   @include main-text(14px, 20px, $normal);
+  color: $header-text-color;
 
   @media (max-width: $mobile-max) {
     @include main-text(10px, 14px, $bold);

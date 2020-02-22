@@ -58,23 +58,44 @@ html {
   grid-row: 1;
   -ms-grid-row-align: start;
       align-self: start;
-  padding-left: 12.5%;
-  background-color: yellow; }
+  padding-left: 12.5%; }
+
+.page-header__logo-link {
+  display: inline-block;
+  margin-bottom: 74px; }
+
+.page-header__logo-link[href] {
+  cursor: pointer; }
+  .page-header__logo-link[href]:hover, .page-header__logo-link[href]:focus {
+    opacity: 0.6; }
+  .page-header__logo-link[href]:active {
+    opacity: 0.3; }
+
+.page-header__logo-wrapper {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 18px; }
 
 .page-header__title {
+  display: block;
+  margin-bottom: 7px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px; }
+  line-height: 28px;
+  color: #2f2f2f; }
   @media (max-width: 767px) {
     .page-header__title {
       display: none; } }
 
 .page-header__description {
+  display: inline-block;
+  max-width: 145px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+  color: #434343; }
   @media (max-width: 767px) {
     .page-header__description {
       font-family: "Lucida Grande", "Helvetica", sans-serif;
@@ -90,8 +111,8 @@ html {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 307px 100%;
-  grid-template-rows: 307px 100%; }
+  -ms-grid-rows: 287px 100%;
+  grid-template-rows: 287px 100%; }
   .page-main h1 {
     -ms-grid-row: 1;
     grid-row: 1;
@@ -108,10 +129,6 @@ html {
         font-weight: 700;
         font-size: 38px;
         line-height: 23px; } }
-
-.logo__wrapper {
-  width: 160px;
-  height: 160px; }
 
 .about h2 {
   margin: 0;
