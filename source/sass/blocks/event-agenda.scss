@@ -1,0 +1,62 @@
+.event-agenda__list {
+  @include reset-list;
+}
+
+.event-agenda__item {
+  display: grid;
+  grid-template-columns: 41px 1fr;
+  column-gap: 77px;
+}
+
+.event-agenda__time {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+
+  @include additional-text(16px, 21px, 500);
+  color: $main-color;
+}
+
+.event-agenda__info {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.event-agenda__title {
+  margin: 0;
+  margin-bottom: 9px;
+
+  @include main-text(26px, 31px, $bold);
+  color: $accent-text-color;
+}
+
+.event-agenda__speaker {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.event-agenda__speaker-name {
+  @include main-text(18px, 21px, $normal);
+  color: $speaker-name-color;
+}
+
+.event-agenda__speaker-company {
+  @include additional-text(18px, 21px, $normal);
+  color: $accent-color;
+}
+
+.event-agenda__description {
+  @include main-text(14px, 20px, $normal);
+  color: $main-color;
+}
+
+.event-agenda__item--break {
+  & .event-agenda__title {
+    @include main-text(20px, 24px, $normal);
+    color: $main-text-color;
+  }
+}

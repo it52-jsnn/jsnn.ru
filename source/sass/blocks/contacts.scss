@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(3, 32px);
   grid-template-rows: 32px;
-  grid-column-gap: 28px;
+  column-gap: 28px;
 
   @include reset-list;
   margin-bottom: 15px;

@@ -1,0 +1,37 @@
+.event-navigation {
+  grid-row: 2;
+  align-self: center;
+
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin-right: 79px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.event-navigation__link {
+  @include main-text(24px, 28px, $normal);
+  color: $main-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    color: $accent-color;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

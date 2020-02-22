@@ -1,5 +1,7 @@
+.events {
+  grid-row: 3;
+}
+
 .events__list {
   @include reset-list;
-
-  grid-row: 2;
 }
