@@ -18,15 +18,17 @@
   @include main-text(24px, 28px, $normal);
   color: $main-color;
 
-  cursor: pointer;
+  &[href] {
+    cursor: pointer;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--active {

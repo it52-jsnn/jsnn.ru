@@ -40,6 +40,10 @@ body {
   column-gap: calc(100% / 16);
 
   background-color: $background-color;
+
+  @media (max-width: $tablet-max) {
+    grid-template-columns: 100%;
+  }
 }
 
 a {

@@ -5,6 +5,10 @@
 
   padding-left: 12.5%;
 
+  @media (max-width: $tablet-max) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .page-header__logo-link {

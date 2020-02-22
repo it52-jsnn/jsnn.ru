@@ -4,4 +4,8 @@
 
 .events__list {
   @include reset-list;
+
+  li {
+    margin-bottom: 36px;
+  }
 }

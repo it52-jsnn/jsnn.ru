@@ -36,6 +36,10 @@ body {
   -moz-column-gap: calc(100% / 16);
        column-gap: calc(100% / 16);
   background-color: #ffffff; }
+  @media (max-width: 1023px) {
+    body {
+      -ms-grid-columns: 100%;
+      grid-template-columns: 100%; } }
 
 a {
   text-decoration: none; }
@@ -60,6 +64,12 @@ html {
   -ms-grid-row-align: start;
       align-self: start;
   padding-left: 12.5%; }
+  @media (max-width: 1023px) {
+    .page-header {
+      -ms-grid-column: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      grid-row: 1; } }
 
 .page-header__logo-link {
   display: inline-block;
@@ -114,6 +124,12 @@ html {
   display: grid;
   -ms-grid-rows: 287px 40px 100%;
   grid-template-rows: 287px 40px 100%; }
+  @media (max-width: 1023px) {
+    .page-main {
+      -ms-grid-column: 1;
+      grid-column: 1;
+      -ms-grid-row: 2;
+      grid-row: 2; } }
   .page-main h1 {
     -ms-grid-row: 1;
     grid-row: 1;
@@ -208,6 +224,8 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  .events__list li {
+    margin-bottom: 36px; }
 
 .event--active .event__title {
   text-decoration: underline; }
@@ -251,6 +269,7 @@ html {
 .event__tag {
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 0;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -346,7 +365,14 @@ html {
   grid-row: 2;
   -ms-grid-row-align: end;
       align-self: end;
-  padding-left: 12.5%; }
+  padding-left: 12.5%;
+  padding-bottom: 25px; }
+  @media (max-width: 1023px) {
+    .page-footer {
+      -ms-grid-column: 1;
+      grid-column: 1;
+      -ms-grid-row: 3;
+      grid-row: 3; } }
 
 .event-navigation {
   -ms-grid-row: 2;
@@ -367,12 +393,13 @@ html {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2f2f2f;
-  cursor: pointer; }
-  .event-navigation__link:hover, .event-navigation__link:focus {
-    opacity: 0.6; }
-  .event-navigation__link:active {
-    opacity: 0.3; }
+  color: #2f2f2f; }
+  .event-navigation__link[href] {
+    cursor: pointer; }
+    .event-navigation__link[href]:hover, .event-navigation__link[href]:focus {
+      opacity: 0.6; }
+    .event-navigation__link[href]:active {
+      opacity: 0.3; }
   .event-navigation__link--active {
     color: #c49612;
     font-weight: bold;
@@ -442,6 +469,7 @@ html {
   color: #c49612; }
 
 .event-agenda__description {
+  margin: 0;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -454,3 +482,70 @@ html {
   font-size: 20px;
   line-height: 24px;
   color: #6a6a6a; }
+
+.event-info {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  padding-top: 40px; }
+
+.event-info__date {
+  position: relative;
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 39px;
+  font-family: "Work Sans", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2f2f2f; }
+  .event-info__date::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 24px;
+    background-image: url("../img/icon-calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 25px; }
+
+.event-info__time {
+  position: relative;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-left: 39px;
+  font-family: "Work Sans", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2f2f2f; }
+  .event-info__time::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-clock.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px; }
+
+.event-info__location {
+  position: relative;
+  margin: 0;
+  padding-left: 35px;
+  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2f2f2f; }
+  .event-info__location::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 25px;
+    background-image: url("../img/icon-location.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 25px; }

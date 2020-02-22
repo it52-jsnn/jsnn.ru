@@ -38,6 +38,7 @@
 .event__tag {
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 0;
 
   @include additional-text(18px, 21px, $normal);
   color: $accent-color;

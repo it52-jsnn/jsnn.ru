@@ -4,4 +4,10 @@
   align-self: end;
 
   padding-left: 12.5%;
+  padding-bottom: 25px;
+
+  @media (max-width: $tablet-max) {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }

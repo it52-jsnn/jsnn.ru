@@ -5,6 +5,11 @@
   display: grid;
   grid-template-rows: 287px 40px 100%;
 
+  @media (max-width: $tablet-max) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
   h1 {
     grid-row: 1;
     align-self: end;

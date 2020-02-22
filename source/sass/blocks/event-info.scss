@@ -1,0 +1,69 @@
+.event-info {
+  grid-row: 3;
+
+  padding-top: 40px;
+}
+
+.event-info__date {
+  position: relative;
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 39px;
+
+  @include additional-text(20px, 23px, $normal);
+  color: $main-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 24px;
+    background-image: url("../img/icon-calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 25px;
+  }
+}
+
+.event-info__time {
+  position: relative;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-left: 39px;
+
+  @include additional-text(20px, 23px, $normal);
+  color: $main-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-clock.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+}
+.event-info__location {
+  position: relative;
+  margin: 0;
+  padding-left: 35px;
+
+  @include main-text(20px, 24px, $normal);
+  color: $main-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 25px;
+    background-image: url("../img/icon-location.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 25px;
+  }
+}

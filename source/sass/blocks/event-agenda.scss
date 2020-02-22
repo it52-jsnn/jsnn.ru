@@ -50,6 +50,7 @@
 }
 
 .event-agenda__description {
+  margin: 0;
   @include main-text(14px, 20px, $normal);
   color: $main-color;
 }
