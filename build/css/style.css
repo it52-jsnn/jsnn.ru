@@ -27,6 +27,7 @@
   overflow: hidden; }
 
 body {
+  min-height: 100vh;
   padding-top: 60px;
   margin: 0;
   display: -ms-grid;
@@ -122,8 +123,8 @@ html {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 287px 40px 100%;
-  grid-template-rows: 287px 40px 100%; }
+  -ms-grid-rows: 287px 40px 1fr;
+  grid-template-rows: 287px 40px 1fr; }
   @media (max-width: 1023px) {
     .page-main {
       -ms-grid-column: 1;
@@ -218,7 +219,11 @@ html {
 
 .events {
   -ms-grid-row: 3;
-  grid-row: 3; }
+  grid-row: 3;
+  background-image: url("../img/deer-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed; }
 
 .events__list {
   padding: 0;

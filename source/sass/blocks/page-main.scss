@@ -3,7 +3,7 @@
   grid-column: 2;
 
   display: grid;
-  grid-template-rows: 287px 40px 100%;
+  grid-template-rows: 287px 40px 1fr;
 
   @media (max-width: $tablet-max) {
     grid-column: 1;

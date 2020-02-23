@@ -1,5 +1,10 @@
 .events {
   grid-row: 3;
+
+  background-image: url("../img/deer-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
 }
 
 .events__list {
