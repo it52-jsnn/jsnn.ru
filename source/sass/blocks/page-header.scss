@@ -122,3 +122,15 @@
     opacity: 0.3;
   }
 }
+
+.page-header__nav-menu {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+  }
+}

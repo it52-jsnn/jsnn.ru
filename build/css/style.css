@@ -183,6 +183,91 @@ html {
   .page-header__nav-about-link:active {
     opacity: 0.3; }
 
+.page-header__nav-menu {
+  display: none; }
+  @media (max-width: 767px) {
+    .page-header__nav-menu {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 20px;
+      right: 20px; } }
+
+.menu {
+  width: calc(100% - 2 * 20px); }
+
+.menu__button {
+  display: inline-block;
+  width: 100%;
+  min-height: 56px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #6a6a6a;
+  cursor: pointer; }
+  .menu__button:hover {
+    background-color: #4d4d4d; }
+  .menu__button:active {
+    opacity: 0.6; }
+
+.menu__content {
+  margin-bottom: 8px; }
+  .menu__content h2 {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-family: "Lucida Grande", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(38, 38, 38, 0.6);
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 6px 6px 0px 0px; }
+
+.menu__items {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .menu__items li {
+    border-top: 1px solid #ffffff; }
+
+.menu__item-link {
+  display: inline-block;
+  width: 100%;
+  min-height: 56px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2f2f2f;
+  background-color: #e6e6e6;
+  cursor: pointer; }
+  .menu__item-link:hover {
+    background-color: #c49612; }
+  .menu__item-link:active {
+    color: rgba(38, 38, 38, 0.6); }
+
+.menu__items li:last-of-type .menu__item-link {
+  border-radius: 0px 0px 6px 6px; }
+
 .page-main {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
