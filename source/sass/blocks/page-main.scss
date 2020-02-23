@@ -9,16 +9,26 @@
     grid-column: 1;
     grid-row: 2;
   }
+}
 
-  h1 {
-    grid-row: 1;
-    align-self: end;
+.page-main__title {
+  grid-row: 1;
+  align-self: end;
 
-    margin: 0;
-    @include main-text(82px, 97px, $bold);
+  margin: 0;
+  @include main-text(82px, 97px, $bold);
 
-    @media (max-width: $mobile-max) {
-      @include main-text(38px, 23px, $bold);
-    }
+  @media (max-width: $mobile-max) {
+    @include main-text(38px, 23px, $bold);
   }
+}
+
+.page-main__nav {
+  grid-row: 2;
+  align-self: center;
+}
+
+.page-main__content {
+  grid-row: 3;
+  align-self: start;
 }

@@ -5,6 +5,20 @@
       text-decoration: underline;
     }
   }
+
+  &--past {
+    display: none;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
+  }
+
+  &:last-of-type {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
 }
 
 .event__title {
@@ -42,4 +56,26 @@
 
   @include additional-text(18px, 21px, $normal);
   color: $accent-color;
+}
+
+.event__status {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    width: 64px;
+    min-height: 20px;
+
+    display: inline-block;
+    @include main-text(7px, 22px, $normal);
+    text-align: center;
+    color: $main-color;
+
+    background-color: $status-color;
+    border-radius: 10px;
+  }
+}
+
+.event--past .event__status {
+  color: $main-text-color;
+  background-color: $past-status-color;
 }
