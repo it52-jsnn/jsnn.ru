@@ -235,6 +235,8 @@ html {
     text-align: center;
     background-color: #e6e6e6;
     border-radius: 6px 6px 0px 0px; }
+  .menu__content--hidden {
+    display: none; }
 
 .menu__items {
   width: 100%;
