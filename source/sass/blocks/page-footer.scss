@@ -11,5 +11,34 @@
     grid-row: 3;
 
     padding-top: 30px;
+    padding-right: 12.5%;
+  }
+}
+
+.page-footer__contacts {
+  @media (max-width: $tablet-max) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__social-list {
+  @media (max-width: $tablet-max) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.page-footer__email {
+  @media (max-width: $tablet-max) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.page-footer__copyright {
+  @media (max-width: $tablet-max) {
+    grid-column: 3;
+    grid-row: 1;
   }
 }

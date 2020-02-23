@@ -44,6 +44,7 @@ body {
 
   @media (max-width: $tablet-max) {
     grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr 100px;
   }
 }
 
