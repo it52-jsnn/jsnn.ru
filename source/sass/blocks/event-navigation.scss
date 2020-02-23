@@ -8,6 +8,10 @@
     &:last-of-type {
       margin-right: 0;
     }
+
+    @media (max-width: $tablet-max) {
+      margin-right: 35px;
+    }
   }
 }
 

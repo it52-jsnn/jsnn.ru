@@ -6,23 +6,3 @@
     color: $main-color;
   }
 }
-
-.about__link {
-  display: inline-block;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  h2 {
-    margin: 0;
-    @include main-text(18px, 21px, $normal);
-    color: $main-color;
-  }
-}

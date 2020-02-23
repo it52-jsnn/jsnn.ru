@@ -8,12 +8,25 @@
   @media (max-width: $tablet-max) {
     grid-column: 1;
     grid-row: 1;
+
+    padding-right: 12.5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .page-header__logo-link {
   display: inline-block;
   margin-bottom: 74px;
+
+  @media (max-width: $tablet-max) {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-columns: 90px 150px;
+  }
 }
 
 .page-header__logo-link[href] {
@@ -33,6 +46,15 @@
   width: 160px;
   height: 160px;
   margin-bottom: 18px;
+
+  @media (max-width: $tablet-max) {
+    width: 80px;
+    height: 80px;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -42,7 +64,7 @@
   @include main-text(24px, 28px, $bold);
   color: $main-color;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     display: none;
   }
 }
@@ -53,7 +75,50 @@
   @include main-text(14px, 20px, $normal);
   color: $header-text-color;
 
+  @media (max-width: $tablet-max) {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+  }
+
   @media (max-width: $mobile-max) {
     @include main-text(10px, 14px, $bold);
+  }
+}
+
+.page-header__nav {
+  @media (max-width: $tablet-max) {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+    align-self: start;
+
+    padding-top: 30px;
+  }
+}
+
+.page-header__nav-filters {
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
+}
+
+.page-header__nav-about-link {
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+
+  @include main-text(18px, 21px, $normal);
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
