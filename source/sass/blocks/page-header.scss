@@ -34,6 +34,10 @@
     display: grid;
     grid-template-columns: 90px 150px;
   }
+
+  @media (max-width: $mobile-max) {
+    grid-template-columns: 63px 110px;
+  }
 }
 
 .page-header__logo-link[href] {
@@ -61,6 +65,11 @@
     grid-column: 1;
     align-self: center;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 52px;
+    height: 52px;
   }
 }
 

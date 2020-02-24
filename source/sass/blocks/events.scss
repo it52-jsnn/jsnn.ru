@@ -8,6 +8,7 @@
 
   @media (max-width: $mobile-max) {
     background-image: none;
+    padding-top: 11px;
   }
 }
 
@@ -21,6 +22,6 @@
   margin-bottom: 34px;
 
   @media (max-width: $mobile-max) {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 }

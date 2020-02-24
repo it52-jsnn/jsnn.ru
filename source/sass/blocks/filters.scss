@@ -6,13 +6,13 @@
     @include main-text(18px, 21px, $bold);
     color: $main-color;
   }
+}
 
-  & .filters__input-group {
-    margin-bottom: 12px;
+.filters__input-group {
+  margin-bottom: 12px;
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   label {
@@ -23,7 +23,13 @@
     @include main-text(14px, 16px, $normal);
     color: $main-color;
 
+    transition: opacity 0.3s;
+
     cursor: pointer;
+
+    @media (max-width: $mobile-max) {
+      @include main-text(16px, 19px, $normal);
+    }
 
     &:hover {
       opacity: 0.6;

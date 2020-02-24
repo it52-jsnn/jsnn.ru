@@ -21,6 +21,7 @@
   @media (max-width: $mobile-max) {
     padding-left: 0;
     padding-right: 0;
+    grid-template-rows: 50px 59px 1fr;
   }
 }
 
@@ -56,6 +57,15 @@
 .page-main__nav {
   grid-row: 2;
   align-self: end;
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $mobile-max) {
+      display: grid;
+      grid-template-columns: 167px 1fr;
+    }
+  }
 }
 
 .page-main__content {

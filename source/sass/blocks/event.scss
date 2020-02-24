@@ -35,7 +35,9 @@
   color: $main-color;
 
   @media (max-width: $mobile-max) {
-    @include additional-text(18px, 24px, $semibold);
+    margin-bottom: 2px;
+
+    @include additional-text(24px, 28px, $semibold);
   }
 }
 
@@ -81,6 +83,9 @@
     grid-row: 1;
     grid-column: 2;
     justify-self: end;
+    align-self: end;
+
+    margin-bottom: 10px;
 
     width: 64px;
     height: 20px;
