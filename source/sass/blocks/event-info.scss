@@ -10,7 +10,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 41px;
+  padding-left: 36px;
 
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
@@ -25,7 +25,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 3px;
+    left: -2px;
     top: 0;
     width: 22px;
     height: 24px;
@@ -47,7 +47,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 39px;
-  padding-left: 41px;
+  padding-left: 36px;
 
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
@@ -62,7 +62,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 3px;
+    left: -2px;
     top: 0;
     width: 24px;
     height: 24px;
@@ -82,7 +82,7 @@
 .event-info__location {
   position: relative;
   margin: 0;
-  padding-left: 41px;
+  padding-left: 36px;
 
   @include main-text(20px, 24px, $normal);
   color: $main-color;
@@ -96,7 +96,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 6px;
+    left: 0;
     top: -2px;
     width: 17px;
     height: 25px;

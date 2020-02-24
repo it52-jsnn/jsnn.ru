@@ -1,5 +1,6 @@
 .menu {
   width: calc(100% - 2 * 20px);
+  z-index: 10;
 }
 
 .menu__button {

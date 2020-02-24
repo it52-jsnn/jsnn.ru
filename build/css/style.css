@@ -27,7 +27,7 @@
   overflow: hidden; }
 
 body {
-  min-height: 100vh;
+  min-height: 1024px;
   padding-top: 60px;
   margin: 0;
   padding-bottom: 15px;
@@ -38,6 +38,7 @@ body {
   background-color: #ffffff; }
   @media (max-width: 1023px) {
     body {
+      min-height: 100vh;
       -ms-grid-columns: 100%;
       grid-template-columns: 100%;
       -ms-grid-rows: 70px 1fr 70px;
@@ -46,6 +47,7 @@ body {
       padding-left: calc(100% / 16); } }
   @media (max-width: 767px) {
     body {
+      min-height: 736px;
       -ms-grid-rows: 70px 1fr;
       grid-template-rows: 70px 1fr;
       padding-top: 84px;
@@ -221,7 +223,8 @@ html {
       left: 20px; } }
 
 .menu {
-  width: calc(100% - 2 * 20px); }
+  width: calc(100% - 2 * 20px);
+  z-index: 10; }
 
 .menu__button {
   display: inline-block;
@@ -375,10 +378,16 @@ html {
   grid-row: 2;
   -ms-grid-row-align: end;
       align-self: end; }
-  .page-main__nav--mobile {
+  .page-main__nav--tablet {
     display: none; }
+    @media (max-width: 1023px) {
+      .page-main__nav--tablet {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr; } }
     @media (max-width: 767px) {
-      .page-main__nav--mobile {
+      .page-main__nav--tablet {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 167px 1fr;
@@ -388,7 +397,8 @@ html {
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-row-align: start;
-      align-self: start; }
+      align-self: start;
+  padding-left: 5px; }
 
 @media (max-width: 767px) {
   .about {
@@ -484,12 +494,25 @@ html {
       line-height: 19px; } }
 
 .events {
-  padding-top: 2px;
-  background-image: url("../img/deer-bg-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 539px 612px;
-  background-position: 700px 300px;
-  background-attachment: fixed; }
+  position: relative;
+  padding-top: 2px; }
+  .events::before {
+    z-index: 5;
+    content: "";
+    position: fixed;
+    width: 541px;
+    height: 577px;
+    bottom: 0;
+    right: 122px;
+    background-image: url("../img/deer-bg-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 541px 577px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .events::before {
+        background-image: url("../img/deer-bg-desktop@2x.png"); } }
+    @media (max-width: 1023px) {
+      .events::before {
+        display: none; } }
   @media (max-width: 767px) {
     .events {
       background-image: none;
@@ -796,12 +819,10 @@ html {
     text-decoration: underline; }
 
 .event-agenda {
-  padding-top: 55px;
-  padding-left: 5px; }
+  padding-top: 55px; }
   @media (max-width: 767px) {
     .event-agenda {
-      padding-top: 16px;
-      padding-left: 0; } }
+      padding-top: 16px; } }
 
 .event-agenda__list {
   padding: 0;
@@ -884,8 +905,10 @@ html {
 .event-agenda__item--break .event-agenda__info::after {
   border-left: 2px dashed #2f2f2f; }
 
-.event-agenda__item:last-of-type .event-agenda__info::after {
-  display: none; }
+.event-agenda__item:last-of-type .event-agenda__info {
+  padding-bottom: 0; }
+  .event-agenda__item:last-of-type .event-agenda__info::after {
+    display: none; }
 
 .event-agenda__title {
   margin: 0;
@@ -969,7 +992,7 @@ html {
   position: relative;
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 41px;
+  padding-left: 36px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -986,7 +1009,7 @@ html {
   .event-info__date::before {
     position: absolute;
     content: "";
-    left: 3px;
+    left: -2px;
     top: 0;
     width: 22px;
     height: 24px;
@@ -1005,7 +1028,7 @@ html {
   position: relative;
   margin: 0;
   margin-bottom: 39px;
-  padding-left: 41px;
+  padding-left: 36px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1022,7 +1045,7 @@ html {
   .event-info__time::before {
     position: absolute;
     content: "";
-    left: 3px;
+    left: -2px;
     top: 0;
     width: 24px;
     height: 24px;
@@ -1039,7 +1062,7 @@ html {
 .event-info__location {
   position: relative;
   margin: 0;
-  padding-left: 41px;
+  padding-left: 36px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1055,7 +1078,7 @@ html {
   .event-info__location::before {
     position: absolute;
     content: "";
-    left: 6px;
+    left: 0;
     top: -2px;
     width: 17px;
     height: 25px;

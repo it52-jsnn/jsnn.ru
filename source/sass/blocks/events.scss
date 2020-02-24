@@ -1,10 +1,30 @@
 .events {
+  position: relative;
   padding-top: 2px;
-  background-image: url("../img/deer-bg-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 539px 612px;
-  background-position: 700px 300px;
-  background-attachment: fixed;
+
+  &::before {
+    z-index: 5;
+    content: "";
+    position: fixed;
+    width: 541px;
+    height: 577px;
+    bottom: 0;
+    right: 122px;
+
+    background-image: url("../img/deer-bg-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 541px 577px;
+    // background-position: 700px 300px;
+    // background-attachment: fixed;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/deer-bg-desktop@2x.png");
+    }
+
+    @media (max-width: $tablet-max) {
+      display: none;
+    }
+  }
 
   @media (max-width: $mobile-max) {
     background-image: none;

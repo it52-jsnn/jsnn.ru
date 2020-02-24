@@ -32,7 +32,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 1024px;
   padding-top: 60px;
   margin: 0;
   padding-bottom: 15px;
@@ -43,6 +43,7 @@ body {
   background-color: $background-color;
 
   @media (max-width: $tablet-max) {
+    min-height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: 70px 1fr 70px;
 
@@ -51,6 +52,7 @@ body {
   }
 
   @media (max-width: $mobile-max) {
+    min-height: 736px;
     grid-template-rows: 70px 1fr;
     padding-top: 84px;
     padding-left: 20px;

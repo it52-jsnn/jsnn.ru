@@ -65,8 +65,13 @@
   grid-row: 2;
   align-self: end;
 
-  &--mobile {
+  &--tablet {
     display: none;
+
+    @media (max-width: $tablet-max) {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
 
     @media (max-width: $mobile-max) {
       display: grid;
@@ -78,4 +83,6 @@
 .page-main__content {
   grid-row: 3;
   align-self: start;
+
+  padding-left: 5px;
 }
