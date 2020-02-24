@@ -44,7 +44,9 @@ body {
   @media (max-width: $tablet-max) {
     grid-template-columns: 100%;
     grid-template-rows: 70px 1fr 70px;
+  }
 
+  @media (max-width: $mobile-max) {
     padding-bottom: 89px;
   }
 }

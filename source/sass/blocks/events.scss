@@ -12,8 +12,12 @@
 
 .events__list {
   @include reset-list;
+}
 
-  li {
-    margin-bottom: 36px;
+.events__item {
+  margin-bottom: 36px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 28px;
   }
 }
