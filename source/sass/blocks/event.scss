@@ -91,6 +91,7 @@
     height: 20px;
 
     display: inline-block;
+
     @include main-text(7px, 22px, $normal);
     text-align: center;
     color: $main-color;

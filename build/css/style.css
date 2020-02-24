@@ -237,8 +237,7 @@ html {
   border-radius: 6px;
   background-color: #6a6a6a;
   cursor: pointer;
-  transition: opacity 0.3s ease;
-  transition: background-color 0.3s ease; }
+  transition: background-color 0.3s ease, opacity 0.3s ease; }
   .menu__button:hover {
     background-color: #4d4d4d; }
   .menu__button:active {
@@ -259,7 +258,7 @@ html {
     color: rgba(38, 38, 38, 0.6);
     text-align: center;
     background-color: #e6e6e6;
-    border-radius: 6px 6px 0px 0px; }
+    border-radius: 6px 6px 0 0; }
   .menu__content--hidden {
     display: none; }
 
@@ -287,15 +286,14 @@ html {
   color: #2f2f2f;
   background-color: #e6e6e6;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease; }
+  transition: color 0.3s ease, background-color 0.3s ease; }
   .menu__item-link:hover {
     background-color: #c49612; }
   .menu__item-link:active {
     color: rgba(38, 38, 38, 0.6); }
 
 .menu__items li:last-of-type .menu__item-link {
-  border-radius: 0px 0px 6px 6px; }
+  border-radius: 0 0 6px 6px; }
 
 .page-main {
   -ms-grid-row: 1;
@@ -600,7 +598,7 @@ html {
       line-height: 22px;
       text-align: center;
       color: #2f2f2f;
-      background-color: #F7E04B;
+      background-color: #f7e04b;
       border-radius: 10px; } }
 
 .event--past .event__status {

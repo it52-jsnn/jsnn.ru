@@ -88,6 +88,7 @@
 
 .event-agenda__description {
   margin: 0;
+
   @include main-text(14px, 20px, $normal);
   color: $main-color;
 
@@ -99,7 +100,6 @@
 }
 
 .event-agenda__item--break {
-
   & .event-agenda__info {
     padding-bottom: 24px;
   }

@@ -6,6 +6,7 @@
   p {
     margin: 0;
     margin-bottom: 24px;
+
     @include main-text(16px, 24px, $normal);
     color: $main-color;
 

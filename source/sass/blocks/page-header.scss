@@ -78,6 +78,7 @@
 .page-header__title {
   display: block;
   margin-bottom: 7px;
+
   @include additional-text(24px, 28px, $bold);
   color: $main-color;
 
@@ -89,6 +90,7 @@
 .page-header__description {
   display: inline-block;
   max-width: 145px;
+
   @include main-text(14px, 20px, $normal);
   color: $header-text-color;
 

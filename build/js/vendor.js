@@ -6,6 +6,7 @@
  */
 /* jslint browser: true */
 /* global XDomainRequest, MutationObserver, window */
+/* eslint-disable */
 'use strict';
 (function () {
   if (typeof window !== 'undefined' && window.addEventListener) {

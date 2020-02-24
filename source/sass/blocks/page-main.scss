@@ -30,6 +30,7 @@
   align-self: end;
 
   margin: 0;
+
   @include main-text(82px, 96px, $bold);
 
   @media (max-width: $tablet-max) {
@@ -44,6 +45,7 @@
 
   &--event {
     margin-bottom: -2px;
+
     @include additional-text(82px, 96px, $bold);
 
     @media (max-width: $tablet-max) {
