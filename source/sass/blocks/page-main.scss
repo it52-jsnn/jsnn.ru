@@ -37,6 +37,8 @@
   }
 
   @media (max-width: $mobile-max) {
+    margin-left: -3px;
+
     @include main-text(38px, 23px, $bold);
   }
 
@@ -49,6 +51,8 @@
     }
 
     @media (max-width: $mobile-max) {
+      margin-left: 0;
+
       @include additional-text(38px, 23px, $bold);
     }
   }

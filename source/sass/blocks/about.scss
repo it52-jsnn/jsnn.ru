@@ -1,8 +1,16 @@
 .about {
+  @media (max-width: $mobile-max) {
+    margin-top: -25px;
+  }
 
   p {
     margin: 0;
+    margin-bottom: 24px;
     @include main-text(16px, 24px, $normal);
     color: $main-color;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

@@ -338,6 +338,7 @@ html {
       line-height: 67px; } }
   @media (max-width: 767px) {
     .page-main__title {
+      margin-left: -3px;
       font-family: "Lucida Grande", "Helvetica", sans-serif;
       font-weight: 700;
       font-size: 38px;
@@ -356,6 +357,7 @@ html {
         line-height: 67px; } }
     @media (max-width: 767px) {
       .page-main__title--event {
+        margin-left: 0;
         font-family: "Work Sans", "Open Sans", sans-serif;
         font-weight: 700;
         font-size: 38px;
@@ -381,13 +383,20 @@ html {
   -ms-grid-row-align: start;
       align-self: start; }
 
+@media (max-width: 767px) {
+  .about {
+    margin-top: -25px; } }
+
 .about p {
   margin: 0;
+  margin-bottom: 24px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #2f2f2f; }
+  .about p:last-of-type {
+    margin-bottom: 0; }
 
 .contacts {
   padding: 0;
