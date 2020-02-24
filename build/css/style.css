@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   padding-top: 60px;
   margin: 0;
+  padding-bottom: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc(100% / 6) calc(100% - 100% / 6);
@@ -130,7 +131,7 @@ html {
 .page-header__title {
   display: block;
   margin-bottom: 7px;
-  font-family: "Lucida Grande", "Helvetica", sans-serif;
+  font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -331,6 +332,7 @@ html {
       font-size: 38px;
       line-height: 23px; } }
   .page-main__title--event {
+    margin-bottom: -2px;
     font-family: "Work Sans", "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 82px;
@@ -636,8 +638,7 @@ html {
   grid-row: 2;
   -ms-grid-row-align: end;
       align-self: end;
-  padding-left: 12.5%;
-  padding-bottom: 25px; }
+  padding-left: 12.5%; }
   @media (max-width: 1023px) {
     .page-footer {
       -ms-grid-column: 1;
@@ -645,8 +646,7 @@ html {
       -ms-grid-row: 3;
       grid-row: 3;
       padding-top: 30px;
-      padding-right: 12.5%;
-      padding-bottom: 0; } }
+      padding-right: 12.5%; } }
   @media (max-width: 767px) {
     .page-footer {
       display: none; } }
@@ -825,13 +825,13 @@ html {
   color: #6a6a6a; }
 
 .event-info {
-  padding-top: 40px; }
+  padding-top: 60px; }
 
 .event-info__date {
   position: relative;
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 39px;
+  padding-left: 41px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -847,7 +847,7 @@ html {
   .event-info__date::before {
     position: absolute;
     content: "";
-    left: 0;
+    left: 3px;
     top: 0;
     width: 22px;
     height: 24px;
@@ -863,8 +863,8 @@ html {
 .event-info__time {
   position: relative;
   margin: 0;
-  margin-bottom: 37px;
-  padding-left: 39px;
+  margin-bottom: 39px;
+  padding-left: 41px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -880,7 +880,7 @@ html {
   .event-info__time::before {
     position: absolute;
     content: "";
-    left: 0;
+    left: 3px;
     top: 0;
     width: 24px;
     height: 24px;
@@ -896,7 +896,7 @@ html {
 .event-info__location {
   position: relative;
   margin: 0;
-  padding-left: 35px;
+  padding-left: 41px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -912,8 +912,8 @@ html {
   .event-info__location::before {
     position: absolute;
     content: "";
-    left: 0;
-    top: 0;
+    left: 6px;
+    top: -2px;
     width: 17px;
     height: 25px;
     background-image: url("../img/icon-location.svg");

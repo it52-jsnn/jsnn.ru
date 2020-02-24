@@ -68,7 +68,7 @@
 .page-header__title {
   display: block;
   margin-bottom: 7px;
-  @include main-text(24px, 28px, $bold);
+  @include additional-text(24px, 28px, $bold);
   color: $main-color;
 
   @media (max-width: $tablet-max) {

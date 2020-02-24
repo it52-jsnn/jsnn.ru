@@ -1,12 +1,12 @@
 .event-info {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .event-info__date {
   position: relative;
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 39px;
+  padding-left: 41px;
 
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
@@ -20,7 +20,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 0;
+    left: 3px;
     top: 0;
     width: 22px;
     height: 24px;
@@ -39,8 +39,8 @@
 .event-info__time {
   position: relative;
   margin: 0;
-  margin-bottom: 37px;
-  padding-left: 39px;
+  margin-bottom: 39px;
+  padding-left: 41px;
 
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
@@ -54,7 +54,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 0;
+    left: 3px;
     top: 0;
     width: 24px;
     height: 24px;
@@ -72,7 +72,7 @@
 .event-info__location {
   position: relative;
   margin: 0;
-  padding-left: 35px;
+  padding-left: 41px;
 
   @include main-text(20px, 24px, $normal);
   color: $main-color;
@@ -86,8 +86,8 @@
   &::before {
     position: absolute;
     content: "";
-    left: 0;
-    top: 0;
+    left: 6px;
+    top: -2px;
     width: 17px;
     height: 25px;
     background-image: url("../img/icon-location.svg");

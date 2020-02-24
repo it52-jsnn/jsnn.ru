@@ -40,6 +40,7 @@
   }
 
   &--event {
+    margin-bottom: -2px;
     @include additional-text(82px, 96px, $bold);
 
     @media (max-width: $tablet-max) {
