@@ -1,3 +1,8 @@
+.event-agenda {
+  padding-top: 55px;
+}
+
+
 .event-agenda__list {
   @include reset-list;
 }
@@ -23,8 +28,8 @@
   grid-row: 1;
   align-self: start;
 
-  padding-top: 10px;
-  padding-bottom: 25px;
+  padding-top: 6px;
+  padding-bottom: 33px;
 }
 
 .event-agenda__title {
@@ -75,7 +80,14 @@
 }
 
 .event-agenda__item--break {
+
+  & .event-agenda__info {
+    padding-bottom: 24px;
+  }
+
   & .event-agenda__title {
+    padding-top: 8px;
+
     @include main-text(20px, 24px, $normal);
     color: $main-text-color;
   }

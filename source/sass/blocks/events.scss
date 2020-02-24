@@ -1,4 +1,5 @@
 .events {
+  padding-top: 2px;
   background-image: url("../img/deer-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 539px 612px;
@@ -11,11 +12,13 @@
 }
 
 .events__list {
+  width: 100%;
+
   @include reset-list;
 }
 
 .events__item {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media (max-width: $mobile-max) {
     margin-bottom: 28px;

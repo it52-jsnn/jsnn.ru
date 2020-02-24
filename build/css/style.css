@@ -32,8 +32,8 @@ body {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: calc(100% / 6) calc(100% - 100% / 6 - 100% / 16);
-  grid-template-columns: calc(100% / 6) calc(100% - 100% / 6 - 100% / 16);
+  -ms-grid-columns: calc(100% / 6) calc(100% - 100% / 6);
+  grid-template-columns: calc(100% / 6) calc(100% - 100% / 6);
   background-color: #ffffff; }
   @media (max-width: 1023px) {
     body {
@@ -112,8 +112,8 @@ html {
     opacity: 0.3; }
 
 .page-header__logo-wrapper {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 18px; }
   @media (max-width: 1023px) {
     .page-header__logo-wrapper {
@@ -289,10 +289,10 @@ html {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 287px 40px 1fr;
-  grid-template-rows: 287px 40px 1fr;
-  padding-right: 12.5%;
-  margin-left: calc(100% / 16); }
+  -ms-grid-rows: 246px 47px 1fr;
+  grid-template-rows: 246px 47px 1fr;
+  padding-right: calc(100% / 16);
+  margin-left: calc(100% / 14); }
   @media (max-width: 1023px) {
     .page-main {
       margin-left: 0;
@@ -302,7 +302,7 @@ html {
       grid-row: 2;
       -ms-grid-rows: 70px 40px 1fr;
       grid-template-rows: 70px 40px 1fr;
-      padding-left: 12.5%; } }
+      padding-left: calc(100% / 16); } }
   @media (max-width: 767px) {
     .page-main {
       padding-left: 0;
@@ -317,7 +317,7 @@ html {
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 82px;
-  line-height: 97px; }
+  line-height: 96px; }
   @media (max-width: 1023px) {
     .page-main__title {
       font-family: "Lucida Grande", "Helvetica", sans-serif;
@@ -330,12 +330,29 @@ html {
       font-weight: 700;
       font-size: 38px;
       line-height: 23px; } }
+  .page-main__title--event {
+    font-family: "Work Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px; }
+    @media (max-width: 1023px) {
+      .page-main__title--event {
+        font-family: "Work Sans", "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 67px; } }
+    @media (max-width: 767px) {
+      .page-main__title--event {
+        font-family: "Work Sans", "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 23px; } }
 
 .page-main__nav {
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-row-align: center;
-      align-self: center; }
+  -ms-grid-row-align: end;
+      align-self: end; }
 
 .page-main__content {
   -ms-grid-row: 3;
@@ -408,6 +425,7 @@ html {
       line-height: 19px; } }
 
 .events {
+  padding-top: 2px;
   background-image: url("../img/deer-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 539px 612px;
@@ -418,38 +436,39 @@ html {
       background-image: none; } }
 
 .events__list {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none; }
 
 .events__item {
-  margin-bottom: 36px; }
+  margin-bottom: 34px; }
   @media (max-width: 767px) {
     .events__item {
       margin-bottom: 28px; } }
 
-@media (max-width: 767px) {
-  .event {
-    display: -ms-grid;
-    display: grid;
-    grid-columns: 100% 84px; } }
-
-.event--active .event__title {
-  text-decoration: underline; }
-
-.event--past {
-  display: none; }
+.event {
+  width: 100%; }
   @media (max-width: 767px) {
-    .event--past {
+    .event {
       display: -ms-grid;
-      display: grid; } }
-
-@media (max-width: 767px) {
-  .event:last-of-type {
-    display: none; } }
+      display: grid;
+      grid-columns: 100% 84px; } }
+  .event--active .event__title {
+    text-decoration: underline; }
+  .event--past {
+    display: none; }
+    @media (max-width: 767px) {
+      .event--past {
+        display: -ms-grid;
+        display: grid; } }
+  @media (max-width: 767px) {
+    .event:last-of-type {
+      display: none; } }
 
 .event__title {
   margin: 0;
+  margin-bottom: 17px;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 30px;
@@ -464,6 +483,7 @@ html {
 
 .event__description {
   margin: 0;
+  margin-bottom: 8px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -695,6 +715,9 @@ html {
     font-weight: bold;
     text-decoration: underline; }
 
+.event-agenda {
+  padding-top: 55px; }
+
 .event-agenda__list {
   padding: 0;
   margin: 0;
@@ -727,8 +750,8 @@ html {
   grid-row: 1;
   -ms-grid-row-align: start;
       align-self: start;
-  padding-top: 10px;
-  padding-bottom: 25px; }
+  padding-top: 6px;
+  padding-bottom: 33px; }
 
 .event-agenda__title {
   margin: 0;
@@ -790,7 +813,11 @@ html {
       font-size: 13px;
       line-height: 20px; } }
 
+.event-agenda__item--break .event-agenda__info {
+  padding-bottom: 24px; }
+
 .event-agenda__item--break .event-agenda__title {
+  padding-top: 8px;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 20px;
