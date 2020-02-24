@@ -1,8 +1,10 @@
 .event-agenda {
   padding-top: 55px;
+  padding-left: 5px;
 
   @media (max-width: $mobile-max) {
     padding-top: 16px;
+    padding-left: 0;
   }
 }
 
@@ -36,6 +38,7 @@
 }
 
 .event-agenda__info {
+  position: relative;
   grid-column: 2;
   grid-row: 1;
   align-self: start;
@@ -47,6 +50,48 @@
     padding-top: 7px;
     padding-bottom: 33px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: -59px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+
+    @media (max-width: $mobile-max) {
+      height: 16px;
+      width: 16px;
+      left: -24px;
+      top: 11px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: -50px;
+    width: 1px;
+    height: calc(100% - 20px);
+    border-left: 2px solid $main-color;
+
+    @media (max-width: $mobile-max) {
+      left: -17px;
+      top: 27px;
+      height: calc(100% - 15px);
+    }
+  }
+}
+
+.event-agenda__item--break .event-agenda__info::after {
+  border-left: 2px dashed $main-color;
+}
+
+.event-agenda__item:last-of-type .event-agenda__info::after {
+  display: none;
 }
 
 .event-agenda__title {
