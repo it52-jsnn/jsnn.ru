@@ -6,8 +6,10 @@
   grid-template-rows: 287px 40px 1fr;
 
   padding-right: 12.5%;
+  margin-left: calc(100% / 16);
 
   @media (max-width: $tablet-max) {
+    margin-left: 0;
     grid-column: 1;
     grid-row: 2;
 

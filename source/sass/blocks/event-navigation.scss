@@ -32,6 +32,10 @@
     }
   }
 
+  @media (max-width: $mobile-max) {
+    @include main-text(15px, 18px, $normal);
+  }
+
   &--active {
     color: $accent-color;
     font-weight: bold;

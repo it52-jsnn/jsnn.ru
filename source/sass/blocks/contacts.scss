@@ -12,15 +12,14 @@
 
 .contacts__social-list {
   display: grid;
-  grid-template-columns: repeat(3, 32px);
+  grid-template-columns: repeat(3, 60px);
   grid-template-rows: 32px;
-  column-gap: 28px;
 
   @include reset-list;
   margin-bottom: 15px;
 
   @media (max-width: $tablet-max) {
-    column-gap: 24px;
+    grid-template-columns: repeat(3, 56px);
   }
 }
 
