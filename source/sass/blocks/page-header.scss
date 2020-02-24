@@ -41,6 +41,7 @@
 }
 
 .page-header__logo-link[href] {
+  transition: opacity 0.3s ease;
   cursor: pointer;
 
   &:hover,
@@ -125,6 +126,7 @@
   margin: 0;
   display: inline-block;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 
   @include main-text(18px, 21px, $normal);
   color: $main-color;

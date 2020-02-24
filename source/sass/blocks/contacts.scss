@@ -34,6 +34,9 @@
 }
 
 .contacts__social-link {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -62,7 +65,17 @@
   color: $link-color;
   text-decoration: underline;
 
+  transition: opacity 0.3s ease;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (max-width: $mobile-max) {
     display: block;

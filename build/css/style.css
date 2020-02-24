@@ -111,6 +111,7 @@ html {
       grid-template-columns: 63px 110px; } }
 
 .page-header__logo-link[href] {
+  transition: opacity 0.3s ease;
   cursor: pointer; }
   .page-header__logo-link[href]:hover, .page-header__logo-link[href]:focus {
     opacity: 0.6; }
@@ -194,6 +195,7 @@ html {
   margin: 0;
   display: inline-block;
   cursor: pointer;
+  transition: opacity 0.3s ease;
   font-family: "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -234,7 +236,9 @@ html {
   text-align: center;
   border-radius: 6px;
   background-color: #6a6a6a;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease; }
   .menu__button:hover {
     background-color: #4d4d4d; }
   .menu__button:active {
@@ -282,7 +286,9 @@ html {
   text-align: center;
   color: #2f2f2f;
   background-color: #e6e6e6;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease; }
   .menu__item-link:hover {
     background-color: #c49612; }
   .menu__item-link:active {
@@ -437,19 +443,20 @@ html {
       -ms-grid-rows: 40px;
       grid-template-rows: 40px; } }
 
-.contacts__social-link:hover, .contacts__social-link:focus {
-  opacity: 0.6; }
-
-.contacts__social-link:active {
-  opacity: 0.3; }
-
-.contacts__social-link svg {
-  width: 32px;
-  height: 32px; }
-  @media (max-width: 767px) {
-    .contacts__social-link svg {
-      width: 40px;
-      height: 40px; } }
+.contacts__social-link {
+  transition: opacity 0.3s ease;
+  cursor: pointer; }
+  .contacts__social-link:hover, .contacts__social-link:focus {
+    opacity: 0.6; }
+  .contacts__social-link:active {
+    opacity: 0.3; }
+  .contacts__social-link svg {
+    width: 32px;
+    height: 32px; }
+    @media (max-width: 767px) {
+      .contacts__social-link svg {
+        width: 40px;
+        height: 40px; } }
 
 .contacts__email {
   display: inline-block;
@@ -460,7 +467,12 @@ html {
   line-height: 16px;
   color: #039be5;
   text-decoration: underline;
+  transition: opacity 0.3s ease;
   cursor: pointer; }
+  .contacts__email:hover, .contacts__email:focus {
+    opacity: 0.6; }
+  .contacts__email:active {
+    opacity: 0.3; }
   @media (max-width: 767px) {
     .contacts__email {
       display: block;
@@ -675,7 +687,12 @@ html {
   line-height: 16px;
   color: #039be5;
   text-decoration: underline;
+  transition: opacity 0.3s ease;
   cursor: pointer; }
+  .copyright__link:hover, .copyright__link:focus {
+    opacity: 0.6; }
+  .copyright__link:active {
+    opacity: 0.3; }
   @media (max-width: 767px) {
     .copyright__link {
       font-family: "Work Sans", "Open Sans", sans-serif;
@@ -754,7 +771,8 @@ html {
   line-height: 28px;
   color: #2f2f2f; }
   .event-navigation__link[href] {
-    cursor: pointer; }
+    cursor: pointer;
+    transition: opacity 0.3s ease; }
     .event-navigation__link[href]:hover, .event-navigation__link[href]:focus {
       opacity: 0.6; }
     .event-navigation__link[href]:active {

@@ -16,7 +16,17 @@
   color: $link-color;
   text-decoration: underline;
 
+  transition: opacity 0.3s ease;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (max-width: $mobile-max) {
     @include additional-text(16px, 19px, $normal);
