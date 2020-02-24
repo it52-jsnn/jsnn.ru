@@ -710,6 +710,9 @@ html {
   padding: 0;
   margin: 0;
   list-style: none; }
+  @media (max-width: 767px) {
+    .event-navigation {
+      margin-bottom: 15px; } }
   .event-navigation li {
     display: inline-block;
     margin-right: 79px; }
@@ -717,7 +720,7 @@ html {
       margin-right: 0; }
     @media (max-width: 1023px) {
       .event-navigation li {
-        margin-right: 35px; } }
+        margin-right: 34px; } }
 
 .event-navigation__link {
   font-family: "Lucida Grande", "Helvetica", sans-serif;
@@ -744,6 +747,9 @@ html {
 
 .event-agenda {
   padding-top: 55px; }
+  @media (max-width: 767px) {
+    .event-agenda {
+      padding-top: 16px; } }
 
 .event-agenda__list {
   padding: 0;
@@ -755,6 +761,10 @@ html {
   display: grid;
   -ms-grid-columns: 118px 1fr;
   grid-template-columns: 118px 1fr; }
+  @media (max-width: 767px) {
+    .event-agenda__item {
+      -ms-grid-columns: 63px 1fr;
+      grid-template-columns: 63px 1fr; } }
 
 .event-agenda__time {
   -ms-grid-column: 1;
@@ -769,6 +779,12 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: #2f2f2f; }
+  @media (max-width: 767px) {
+    .event-agenda__time {
+      font-family: "Work Sans", "Open Sans", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px; } }
 
 .event-agenda__info {
   -ms-grid-column: 2;
@@ -779,6 +795,10 @@ html {
       align-self: start;
   padding-top: 6px;
   padding-bottom: 33px; }
+  @media (max-width: 767px) {
+    .event-agenda__info {
+      padding-top: 7px;
+      padding-bottom: 33px; } }
 
 .event-agenda__title {
   margin: 0;
@@ -790,7 +810,7 @@ html {
   color: #000000; }
   @media (max-width: 767px) {
     .event-agenda__title {
-      margin-bottom: 7px;
+      margin-bottom: 4px;
       font-family: "Lucida Grande", "Helvetica", sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -835,6 +855,7 @@ html {
   color: #2f2f2f; }
   @media (max-width: 767px) {
     .event-agenda__description {
+      padding-right: 10px;
       font-family: "Lucida Grande", "Helvetica", sans-serif;
       font-weight: 400;
       font-size: 13px;

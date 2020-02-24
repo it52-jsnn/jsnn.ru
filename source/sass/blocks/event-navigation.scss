@@ -1,6 +1,10 @@
 .event-navigation {
   @include reset-list;
 
+  @media (max-width: $mobile-max) {
+    margin-bottom: 15px;
+  }
+
   li {
     display: inline-block;
     margin-right: 79px;
@@ -10,7 +14,7 @@
     }
 
     @media (max-width: $tablet-max) {
-      margin-right: 35px;
+      margin-right: 34px;
     }
   }
 }

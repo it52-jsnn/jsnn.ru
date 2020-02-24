@@ -1,5 +1,9 @@
 .event-agenda {
   padding-top: 55px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 16px;
+  }
 }
 
 
@@ -10,6 +14,10 @@
 .event-agenda__item {
   display: grid;
   grid-template-columns: 118px 1fr;
+
+  @media (max-width: $mobile-max) {
+    grid-template-columns: 63px 1fr;
+  }
 }
 
 .event-agenda__time {
@@ -21,6 +29,10 @@
 
   @include additional-text(16px, 21px, 500);
   color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(12px, 17px, 500);
+  }
 }
 
 .event-agenda__info {
@@ -30,6 +42,11 @@
 
   padding-top: 6px;
   padding-bottom: 33px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 7px;
+    padding-bottom: 33px;
+  }
 }
 
 .event-agenda__title {
@@ -40,7 +57,7 @@
   color: $accent-text-color;
 
   @media (max-width: $mobile-max) {
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 
     @include main-text(18px, 24px, $bold);
   }
@@ -75,6 +92,8 @@
   color: $main-color;
 
   @media (max-width: $mobile-max) {
+    padding-right: 10px;
+
     @include main-text(13px, 20px, $normal);
   }
 }
