@@ -1,5 +1,9 @@
 .event-info {
   padding-top: 60px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 26px;
+  }
 }
 
 .event-info__date {
@@ -13,6 +17,7 @@
 
   @media (max-width: $mobile-max) {
     padding-left: 31px;
+    margin-bottom: 29px;
 
     @include additional-text(16px, 19px, $normal);
   }
@@ -32,6 +37,8 @@
       background-size: 18px 20px;
       width: 18px;
       height: 20px;
+      left: 0;
+      top: -1px;
     }
   }
 }
@@ -47,6 +54,7 @@
 
   @media (max-width: $mobile-max) {
     padding-left: 31px;
+    margin-bottom: 26px;
 
     @include additional-text(16px, 19px, $normal);
   }
@@ -66,6 +74,7 @@
       background-size: 18px 20px;
       width: 18px;
       height: 20px;
+      left: 0;
     }
   }
 }
@@ -78,7 +87,7 @@
   color: $main-color;
 
   @media (max-width: $mobile-max) {
-    padding-left: 31px;
+    padding-left: 30px;
 
     @include main-text(16px, 24px, $normal);
   }
@@ -98,7 +107,8 @@
       background-size: 12px 18px;
       width: 12px;
       height: 18px;
-      left: 3px;
+      left: 2px;
+      top: 4px;
     }
   }
 }
