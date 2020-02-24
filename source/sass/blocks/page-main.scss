@@ -17,6 +17,11 @@
 
     padding-left: 12.5%;
   }
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .page-main__title {

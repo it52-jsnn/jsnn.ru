@@ -1,5 +1,10 @@
 .event {
 
+  @media (max-width: $mobile-max) {
+    display: grid;
+    grid-columns: 100% 84px;
+  }
+
   &--active {
     .event__title {
       text-decoration: underline;
@@ -10,7 +15,7 @@
     display: none;
 
     @media (max-width: $mobile-max) {
-      display: block;
+      display: grid;
     }
   }
 
@@ -41,6 +46,12 @@
   }
 }
 
+.event__address {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
 .event__tags {
   @include reset-list;
 
@@ -62,8 +73,12 @@
   display: none;
 
   @media (max-width: $mobile-max) {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+
     width: 64px;
-    min-height: 20px;
+    height: 20px;
 
     display: inline-block;
     @include main-text(7px, 22px, $normal);

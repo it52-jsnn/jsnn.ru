@@ -11,6 +11,12 @@
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
 
+  @media (max-width: $mobile-max) {
+    padding-left: 31px;
+
+    @include additional-text(16px, 19px, $normal);
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -21,6 +27,12 @@
     background-image: url("../img/icon-calendar.svg");
     background-repeat: no-repeat;
     background-size: 22px 25px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+    }
   }
 }
 
@@ -33,6 +45,12 @@
   @include additional-text(20px, 23px, $normal);
   color: $main-color;
 
+  @media (max-width: $mobile-max) {
+    padding-left: 31px;
+
+    @include additional-text(16px, 19px, $normal);
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -43,6 +61,12 @@
     background-image: url("../img/icon-clock.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+    }
   }
 }
 .event-info__location {
@@ -52,6 +76,12 @@
 
   @include main-text(20px, 24px, $normal);
   color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 31px;
+
+    @include main-text(16px, 24px, $normal);
+  }
 
   &::before {
     position: absolute;
@@ -63,5 +93,12 @@
     background-image: url("../img/icon-location.svg");
     background-repeat: no-repeat;
     background-size: 17px 25px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 12px 18px;
+      width: 12px;
+      height: 18px;
+      left: 3px;
+    }
   }
 }

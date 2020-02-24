@@ -14,6 +14,10 @@
     padding-right: 12.5%;
     padding-bottom: 0;
   }
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .page-footer__contacts {
