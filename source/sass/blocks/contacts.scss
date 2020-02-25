@@ -33,6 +33,23 @@
   }
 }
 
+.contacts__social-list li:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+}
+
+.contacts__social-list li:nth-of-type(2) {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: start;
+}
+.contacts__social-list li:nth-of-type(3) {
+  grid-row: 1;
+  grid-column: 3;
+  justify-self: start;
+}
+
 .contacts__social-link {
   transition: opacity 0.3s ease;
   cursor: pointer;
