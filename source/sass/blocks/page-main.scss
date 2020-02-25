@@ -86,4 +86,8 @@
   align-self: start;
 
   padding-left: 5px;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+  }
 }

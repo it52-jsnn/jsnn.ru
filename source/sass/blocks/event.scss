@@ -3,7 +3,7 @@
 
   @media (max-width: $mobile-max) {
     display: grid;
-    grid-template-columns: 100% 84px;
+    grid-template-columns: 1fr 84px;
   }
 
   &--active {
@@ -97,10 +97,12 @@
 
     width: 64px;
     height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     display: inline-block;
 
-    @include main-text(7px, 22px, $normal);
+    @include main-text(7px, 20px, $normal);
     text-align: center;
     color: $main-color;
 
