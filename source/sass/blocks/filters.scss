@@ -47,7 +47,7 @@
       opacity: 0.6;
     }
 
-    @media (max-width: $mobile-max) {
+    @media (max-width: $tablet-max) {
       @include main-text(16px, 19px, $normal);
 
       &:hover {
