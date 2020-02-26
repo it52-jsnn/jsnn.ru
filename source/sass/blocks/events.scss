@@ -14,8 +14,6 @@
     background-image: url("../img/deer-bg-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 541px 577px;
-    // background-position: 700px 300px;
-    // background-attachment: fixed;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/deer-bg-desktop@2x.png");
@@ -27,7 +25,7 @@
   }
 
   @media (max-width: $mobile-max) {
-    background-image: none;
+    width: 100%;
     padding-top: 11px;
   }
 }

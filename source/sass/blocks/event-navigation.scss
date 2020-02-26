@@ -6,7 +6,9 @@
   }
 
   @media (max-width: $mobile-small) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   li {
@@ -25,15 +27,6 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 8px;
-    }
-  }
-
-  &--small-mobile {
-    display: none;
-
-    @media (max-width: $mobile-small) {
-      display: block;
-      margin-top: -50px;
     }
   }
 }

@@ -25,7 +25,7 @@
     position: absolute;
     content: "";
     left: -2px;
-    top: 0;
+    top: -2px;
     background-repeat: no-repeat;
 
     @media (max-width: $mobile-max) {
@@ -72,6 +72,7 @@
   &::before {
     width: 24px;
     height: 24px;
+    top: -1px;
     background-image: url("../img/icon-clock.svg");
     background-size: 24px 24px;
 
@@ -88,8 +89,8 @@
   &::before {
     width: 17px;
     height: 25px;
-    left: 1px;
-    top: -2px;
+    left: 2px;
+    top: -1px;
     background-image: url("../img/icon-location.svg");
     background-size: 17px 25px;
 

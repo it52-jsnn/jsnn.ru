@@ -82,9 +82,18 @@
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 0;
+}
 
+.event__tag-link {
   @include additional-text(18px, 21px, $normal);
   color: $accent-color;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .event__status {

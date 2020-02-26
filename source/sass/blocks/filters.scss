@@ -6,6 +6,10 @@
     @include main-text(18px, 21px, $bold);
     color: $main-color;
   }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 28px;
+  }
 }
 
 .filters__input-group {
@@ -39,12 +43,16 @@
 
     cursor: pointer;
 
-    @media (max-width: $mobile-max) {
-      @include main-text(16px, 19px, $normal);
-    }
-
     &:hover {
       opacity: 0.6;
+    }
+
+    @media (max-width: $mobile-max) {
+      @include main-text(16px, 19px, $normal);
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &::before {
