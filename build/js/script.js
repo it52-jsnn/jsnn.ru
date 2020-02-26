@@ -8,25 +8,35 @@ var OPEN_MENU_PADDING = '304px';
 
 var menuBtn = document.querySelector('.menu__button');
 var menuContent = document.querySelector('.menu__content');
-var pageBody = document.querySelector('body');
+var pageWrapper = document.querySelector('.content-wrapper');
 
 if (menuBtn && menuContent) {
   var onMenuOpen = function () {
+    pageWrapper.classList.add('overlay');
     menuContent.classList.remove('menu__content--hidden');
     menuBtn.textContent = MENU_BTN_TEXT_OPENED;
     menuBtn.removeEventListener('click', onMenuOpen);
     menuBtn.addEventListener('click', onMenuClose);
+    pageWrapper.addEventListener('click', onOverlayClick);
 
-    pageBody.style.paddingBottom = OPEN_MENU_PADDING;
+    pageWrapper.style.paddingBottom = OPEN_MENU_PADDING;
   };
 
   var onMenuClose = function () {
+    pageWrapper.classList.remove('overlay');
     menuContent.classList.add('menu__content--hidden');
     menuBtn.textContent = MENU_BTN_TEXT_CLOSED;
     menuBtn.removeEventListener('click', onMenuClose);
     menuBtn.addEventListener('click', onMenuOpen);
+    pageWrapper.removeEventListener('click', onOverlayClick);
 
-    pageBody.style.paddingBottom = CLOSED_MENU_PADDING;
+    pageWrapper.style.paddingBottom = CLOSED_MENU_PADDING;
+  };
+
+  var onOverlayClick = function (evt) {
+    if (!menuContent.contains(evt.target) && evt.target !== menuBtn) {
+      onMenuClose();
+    }
   };
 
 

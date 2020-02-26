@@ -12,7 +12,9 @@ $accent-text-color: #000000;
 $speaker-name-color: #8d8d8d;
 
 
-$main-font-family: "Lucida Grande", "Helvetica", sans-serif;
+$main-font-family: system-ui, -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
 $additional-font-family: "Work Sans", "Open Sans", sans-serif;
 
 $bold: 700;
@@ -23,6 +25,7 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 $mobile-min: 320px;
+$mobile-small: 413px;
 $mobile-max: 767px;
 $tablet-min: 768px;
 $tablet-max: 1023px;

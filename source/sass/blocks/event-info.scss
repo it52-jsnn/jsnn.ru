@@ -6,10 +6,10 @@
   }
 }
 
-.event-info__date {
+.event-info__item {
   position: relative;
+  display: block;
   margin: 0;
-  margin-bottom: 41px;
   padding-left: 36px;
 
   @include additional-text(20px, 23px, $normal);
@@ -17,7 +17,6 @@
 
   @media (max-width: $mobile-max) {
     padding-left: 31px;
-    margin-bottom: 29px;
 
     @include additional-text(16px, 19px, $normal);
   }
@@ -27,10 +26,29 @@
     content: "";
     left: -2px;
     top: 0;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+      left: 0;
+      top: -1px;
+    }
+  }
+}
+
+.event-info__item--date {
+  margin-bottom: 41px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 29px;
+  }
+
+  &::before {
     width: 22px;
     height: 24px;
     background-image: url("../img/icon-calendar.svg");
-    background-repeat: no-repeat;
     background-size: 22px 25px;
 
     @media (max-width: $mobile-max) {
@@ -43,31 +61,18 @@
   }
 }
 
-.event-info__time {
-  position: relative;
-  margin: 0;
-  margin-bottom: 39px;
-  padding-left: 36px;
 
-  @include additional-text(20px, 23px, $normal);
-  color: $main-color;
+.event-info__item--time {
+  margin-bottom: 39px;
 
   @media (max-width: $mobile-max) {
-    padding-left: 31px;
-    margin-bottom: 26px;
-
-    @include additional-text(16px, 19px, $normal);
+    margin-bottom: 29px;
   }
 
   &::before {
-    position: absolute;
-    content: "";
-    left: -2px;
-    top: 0;
     width: 24px;
     height: 24px;
     background-image: url("../img/icon-clock.svg");
-    background-repeat: no-repeat;
     background-size: 24px 24px;
 
     @media (max-width: $mobile-max) {
@@ -79,37 +84,21 @@
   }
 }
 
-.event-info__location {
-  position: relative;
-  margin: 0;
-  padding-left: 36px;
-
-  @include main-text(20px, 24px, $normal);
-  color: $main-color;
-
-  @media (max-width: $mobile-max) {
-    padding-left: 30px;
-
-    @include main-text(16px, 24px, $normal);
-  }
-
+.event-info__item--location {
   &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: -2px;
     width: 17px;
     height: 25px;
+    left: 1px;
+    top: -2px;
     background-image: url("../img/icon-location.svg");
-    background-repeat: no-repeat;
     background-size: 17px 25px;
 
     @media (max-width: $mobile-max) {
       background-size: 12px 18px;
       width: 12px;
       height: 18px;
-      left: 2px;
-      top: 4px;
+      left: 4px;
+      top: 0;
     }
   }
 }

@@ -44,6 +44,7 @@
   grid-column: 2;
   justify-self: start;
 }
+
 .contacts__social-list li:nth-of-type(3) {
   grid-row: 1;
   grid-column: 3;
@@ -74,9 +75,16 @@
   }
 }
 
+.contacts__links {
+  margin-bottom: 52px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 69px;
+  }
+}
+
 .contacts__email {
   display: inline-block;
-  margin-bottom: 52px;
 
   @include additional-text(14px, 16px, $normal);
   color: $link-color;
@@ -96,7 +104,6 @@
 
   @media (max-width: $mobile-max) {
     display: block;
-    margin-bottom: 69px;
 
     @include additional-text(16px, 19px, $normal);
   }

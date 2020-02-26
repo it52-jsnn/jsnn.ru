@@ -33,6 +33,15 @@
   @media (max-width: $mobile-max) {
     @include additional-text(12px, 17px, 500);
   }
+
+  &--start {
+    display: inline-block;
+    margin-bottom: 4px;
+
+    @media (max-width: $mobile-max) {
+      margin-bottom: 2px;
+    }
+  }
 }
 
 .event-agenda__info {
@@ -133,7 +142,7 @@
   }
 }
 
-.event-agenda__description {
+.event-agenda__description p {
   margin: 0;
 
   @include main-text(14px, 20px, $normal);

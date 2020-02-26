@@ -31,23 +31,31 @@
   grid-row: 1;
   align-self: end;
 
-  margin: 0;
+  h1 {
+    margin: 0;
 
-  @include main-text(82px, 96px, $bold);
+    @include main-text(82px, 96px, $bold);
 
-  @media (max-width: $tablet-max) {
-    @include main-text(55px, 67px, $bold);
+    @media (max-width: $tablet-max) {
+      @include main-text(55px, 67px, $bold);
+    }
+
+    @media (max-width: $mobile-max) {
+      margin-left: -3px;
+
+      @include main-text(38px, 23px, $bold);
+    }
   }
 
-  @media (max-width: $mobile-max) {
-    margin-left: -3px;
-
-    @include main-text(38px, 23px, $bold);
+  .page-main__status {
+    display: none;
   }
+}
 
-  &--event {
-    margin-bottom: -2px;
+.page-main__title--event {
+  margin-bottom: -2px;
 
+  h1 {
     @include additional-text(82px, 96px, $bold);
 
     @media (max-width: $tablet-max) {
@@ -58,6 +66,42 @@
       margin-left: 0;
 
       @include additional-text(38px, 23px, $bold);
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    display: grid;
+    grid-template-columns: 1fr 65px;
+
+    h1 {
+      grid-row: 1;
+      grid-column: 1;
+      justify-self: start;
+    }
+
+    .page-main__status {
+      grid-row: 1;
+      grid-column: 2;
+      justify-self: end;
+
+      width: 64px;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      display: inline-block;
+
+      @include main-text(7px, 20px, $normal);
+      text-align: center;
+      color: $main-color;
+
+      background-color: $status-color;
+      border-radius: 10px;
+
+      &--past {
+        color: $main-text-color;
+        background-color: $past-status-color;
+      }
     }
   }
 }
