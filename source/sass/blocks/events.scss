@@ -1,0 +1,45 @@
+.events {
+  position: relative;
+  padding-top: 2px;
+
+  &::before {
+    z-index: 1;
+    content: "";
+    position: fixed;
+    width: 541px;
+    height: 577px;
+    bottom: 0;
+    right: 122px;
+
+    background-image: url("../img/deer-bg-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 541px 577px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/deer-bg-desktop@2x.png");
+    }
+
+    @media (max-width: $tablet-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    padding-top: 11px;
+  }
+}
+
+.events__list {
+  width: 100%;
+
+  @include reset-list;
+}
+
+.events__item {
+  margin-bottom: 34px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
+}

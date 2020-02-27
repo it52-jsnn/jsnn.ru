@@ -1,0 +1,137 @@
+.page-main {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+
+  display: grid;
+  grid-template-rows: 246px 47px 1fr;
+
+  padding-right: calc(100% / 16);
+  margin-left: calc(100% / 14);
+
+  @media (max-width: $tablet-max) {
+    margin-left: 0;
+    margin-bottom: 100px;
+    grid-column: 1;
+    grid-row: 2;
+
+    grid-template-rows: 140px 40px 1fr;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 27px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-main__title {
+  grid-row: 1;
+  align-self: end;
+
+  @media (max-width: $mobile-max) {
+    align-self: flex-start;
+  }
+
+  h1 {
+    margin: 0;
+
+    @include main-text(82px, 96px, $bold);
+
+    @media (max-width: $tablet-max) {
+      @include main-text(55px, 67px, $bold);
+    }
+
+    @media (max-width: $mobile-max) {
+      margin-left: -3px;
+
+      @include main-text(38px, 23px, $bold);
+    }
+  }
+
+  .page-main__status {
+    display: none;
+  }
+}
+
+.page-main__title--event {
+  h1 {
+    @include additional-text(82px, 96px, $bold);
+
+    @media (max-width: $tablet-max) {
+      @include additional-text(55px, 67px, $bold);
+    }
+
+    @media (max-width: $mobile-max) {
+      margin-left: 0;
+
+      @include additional-text(38px, 23px, $bold);
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 24px;
+
+    .page-main__status {
+      display: inline-block;
+      width: 64px;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: auto;
+
+      @include main-text(7px, 20px, $normal);
+      text-align: center;
+      color: $main-color;
+
+      background-color: $status-color;
+      border-radius: 10px;
+
+      &--past {
+        color: $main-text-color;
+        background-color: $past-status-color;
+      }
+    }
+  }
+}
+
+.page-main__nav {
+  @media (min-width: $tablet-min) {
+    grid-row: 2;
+    align-self: end;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (max-width: $tablet-max) {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: grid;
+      grid-template-columns: 167px 1fr;
+    }
+  }
+}
+
+.page-main__content {
+  grid-row: 3;
+  align-self: start;
+
+  padding-left: 5px;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+  }
+}

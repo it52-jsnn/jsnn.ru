@@ -1,0 +1,88 @@
+.filters {
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include main-text(18px, 21px, $bold);
+    color: $main-color;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 28px;
+  }
+}
+
+.filters__input-group {
+  margin-bottom: 12px;
+
+  @media (max-width: $tablet-max) {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    @media (max-width: $tablet-max) {
+      grid-row: 1;
+      grid-column: 2;
+      justify-self: start;
+    }
+  }
+
+  label {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+
+    @include main-text(14px, 16px, $normal);
+    color: $main-color;
+
+    transition: opacity 0.3s;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: $tablet-max) {
+      @include main-text(16px, 19px, $normal);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-checkbox-off.svg");
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-checkbox-on.svg");
+    }
+  }
+}

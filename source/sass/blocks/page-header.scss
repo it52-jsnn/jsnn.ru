@@ -1,0 +1,149 @@
+.page-header {
+  position: sticky;
+  top: 60px;
+
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+
+  padding-left: 12.5%;
+
+  @media (max-width: $tablet-max) {
+    position: relative;
+    top: auto;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-header__logo-link {
+  display: inline-block;
+  margin-bottom: 74px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 90px 150px;
+  }
+
+  @media (max-width: $mobile-max) {
+    grid-template-columns: 63px 120px;
+  }
+}
+
+.page-header__logo-link[href] {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-wrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 18px;
+
+  @media (max-width: $tablet-max) {
+    width: 80px;
+    height: 80px;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+
+.page-header__title {
+  display: block;
+  margin-bottom: 7px;
+
+  @include additional-text(24px, 28px, $bold);
+  color: $main-color;
+
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
+}
+
+.page-header__description {
+  display: inline-block;
+  max-width: 145px;
+
+  @include main-text(14px, 20px, $normal);
+  color: $header-text-color;
+
+  @media (max-width: $tablet-max) {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+  }
+
+  @media (max-width: $mobile-max) {
+    @include main-text(10px, 14px, $bold);
+  }
+}
+
+.page-header__nav {
+  @media (max-width: $tablet-max) {
+    margin-left: auto;
+  }
+}
+
+.page-header__nav-filters {
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
+}
+
+.page-header__nav-about-link {
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  @include main-text(18px, 21px, $normal);
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.page-header__nav-menu {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+}

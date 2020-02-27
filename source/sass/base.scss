@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Work Sans";
+  font-weight: $normal;
+  src: url("../fonts/work-sans-regular.woff2") format("woff2"), url("../fonts/work-sans-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: $semibold;
+  src: url("../fonts/work-sans-600.woff2") format("woff2"), url("../fonts/work-sans-600.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: $bold;
+  src: url("../fonts/work-sans-700.woff2") format("woff2"), url("../fonts/work-sans-700.woff") format("woff");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 7;
+  }
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding-top: 60px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+
+  display: grid;
+  grid-template-columns: calc(100% / 6) calc(100% - 100% / 6);
+
+  background-color: $background-color;
+
+  @media (max-width: $tablet-max) {
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 1fr 70px;
+
+    padding-right: calc(100% / 16);
+    padding-left: calc(100% / 16);
+  }
+
+  @media (max-width: $mobile-max) {
+    min-height: 736px;
+    grid-template-rows: 70px 1fr;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 89px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

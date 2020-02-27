@@ -1,0 +1,105 @@
+.event-info {
+  padding-top: 60px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 26px;
+  }
+}
+
+.event-info__item {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding-left: 36px;
+
+  @include additional-text(20px, 23px, $normal);
+  color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 31px;
+
+    @include additional-text(16px, 19px, $normal);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: -2px;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+      left: 0;
+      top: -1px;
+    }
+  }
+}
+
+.event-info__item--date {
+  margin-bottom: 41px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 29px;
+  }
+
+  &::before {
+    width: 22px;
+    height: 24px;
+    background-image: url("../img/icon-calendar.svg");
+    background-size: 22px 25px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+      left: 0;
+      top: -1px;
+    }
+  }
+}
+
+
+.event-info__item--time {
+  margin-bottom: 39px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 29px;
+  }
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    top: -1px;
+    background-image: url("../img/icon-clock.svg");
+    background-size: 24px 24px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 18px 20px;
+      width: 18px;
+      height: 20px;
+      left: 0;
+    }
+  }
+}
+
+.event-info__item--location {
+  &::before {
+    width: 17px;
+    height: 25px;
+    left: 2px;
+    top: -1px;
+    background-image: url("../img/icon-location.svg");
+    background-size: 17px 25px;
+
+    @media (max-width: $mobile-max) {
+      background-size: 12px 18px;
+      width: 12px;
+      height: 18px;
+      left: 4px;
+      top: 0;
+    }
+  }
+}

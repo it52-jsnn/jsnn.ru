@@ -1,0 +1,61 @@
+.event-navigation {
+  @include reset-list;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-small) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 79px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media (max-width: $tablet-max) {
+      margin-right: 34px;
+    }
+
+    @media (max-width: $mobile-small) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.event-navigation__link {
+  @include main-text(24px, 28px, $normal);
+  color: $main-color;
+
+  &[href] {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    @include main-text(15px, 18px, $normal);
+  }
+
+  &--active {
+    color: $accent-color;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

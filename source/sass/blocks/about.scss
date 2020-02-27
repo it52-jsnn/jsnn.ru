@@ -1,0 +1,27 @@
+.about {
+  @media (max-width: $mobile-max) {
+    margin-top: 34px;
+  }
+
+  @include main-text(16px, 24px, $normal);
+  color: $main-color;
+
+  p {
+    margin: 0;
+    margin-bottom: 24px;
+
+    @include main-text(16px, 24px, $normal);
+    color: $main-color;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 15px;
+
+    @include main-text(20px, 27px, $bold);
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+}

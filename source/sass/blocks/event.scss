@@ -1,0 +1,129 @@
+.event {
+  width: 100%;
+
+  @media (max-width: $mobile-max) {
+    display: grid;
+    grid-template-columns: 1fr 84px;
+  }
+
+  &--past {
+    display: none;
+
+    @media (max-width: $mobile-max) {
+      display: grid;
+    }
+  }
+
+  &:last-of-type {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+}
+
+.event__link {
+  z-index: 5;
+  cursor: pointer;
+
+  &:hover {
+    .event__title {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+  }
+}
+
+.event__title {
+  margin: 0;
+  margin-bottom: 17px;
+
+  @include additional-text(30px, 35px, $semibold);
+  color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 2px;
+
+    @include additional-text(24px, 28px, $semibold);
+  }
+}
+
+.event__description {
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include main-text(18px, 21px, $normal);
+  color: $main-text-color;
+
+  @media (max-width: $mobile-max) {
+    @include main-text(16px, 22px, $normal);
+  }
+}
+
+.event__address {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.event__tags {
+  @include reset-list;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.event__tag {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.event__tag-link {
+  @include additional-text(18px, 21px, $normal);
+  color: $accent-color;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.event__status {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+    align-self: end;
+
+    margin-bottom: 10px;
+
+    width: 64px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: inline-block;
+
+    @include main-text(7px, 20px, $normal);
+    text-align: center;
+    color: $main-color;
+
+    background-color: $status-color;
+    border-radius: 10px;
+  }
+}
+
+.event--past .event__status {
+  color: $main-text-color;
+  background-color: $past-status-color;
+}

@@ -1,0 +1,36 @@
+@mixin main-text($font-size, $line-height, $font-weight) {
+  font-family: $main-font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin additional-text($font-size, $line-height, $font-weight) {
+  font-family: $additional-font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (max-width: $tablet-max) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
