@@ -1,4 +1,7 @@
 .page-footer {
+  position: sticky;
+  bottom: 25px;
+
   grid-column: 1;
   grid-row: 2;
   align-self: end;
@@ -6,6 +9,9 @@
   padding-left: 12.5%;
 
   @media (max-width: $tablet-max) {
+    position: relative;
+    bottom: auto;
+
     grid-column: 1;
     grid-row: 3;
 

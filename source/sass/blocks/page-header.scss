@@ -1,4 +1,7 @@
 .page-header {
+  position: sticky;
+  top: 60px;
+
   grid-column: 1;
   grid-row: 1;
   align-self: start;
@@ -6,6 +9,8 @@
   padding-left: 12.5%;
 
   @media (max-width: $tablet-max) {
+    position: relative;
+    top: auto;
     padding-left: 0;
     display: flex;
     flex-direction: row;

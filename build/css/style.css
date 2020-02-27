@@ -89,6 +89,9 @@ html {
   box-sizing: inherit; }
 
 .page-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -98,6 +101,8 @@ html {
   padding-left: 12.5%; }
   @media (max-width: 1023px) {
     .page-header {
+      position: relative;
+      top: auto;
       padding-left: 0;
       display: flex;
       flex-direction: row;
@@ -843,6 +848,9 @@ html {
       line-height: 19px; } }
 
 .page-footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 25px;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 2;
@@ -852,6 +860,8 @@ html {
   padding-left: 12.5%; }
   @media (max-width: 1023px) {
     .page-footer {
+      position: relative;
+      bottom: auto;
       -ms-grid-column: 1;
       grid-column: 1;
       -ms-grid-row: 3;
