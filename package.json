@@ -50,7 +50,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1",
+    "del": "^5.1.0",
     "normalize-scss": "^7.0.1"
   }
 }
