@@ -39,6 +39,5 @@ if (menuBtn && menuContent) {
     }
   };
 
-
   menuBtn.addEventListener('click', onMenuOpen);
 }
