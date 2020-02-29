@@ -1,0 +1,27 @@
+<header class="page-header">
+  <a href="/" class="page-header__logo-link">
+    <div class="page-header__logo-wrapper">
+      <img src="/assets/logo.svg" width="160" height="160" alt="JSNN">
+    </div>
+    <span class="page-header__title">JSNN</span>
+    <span class="page-header__description">Сообщество разработчиков Нижнего Новгорода</span>
+  </a>
+  <nav class="page-header__nav">
+    {#
+      <section class="page-header__nav-filters filters">
+        <h2>Мероприятия</h2>
+        <div class="filters__input-group">
+          <input type="checkbox" id="future-events" name="future" checked>
+          <label for="future-events">Предстоящие</label>
+        </div>
+        <div class="filters__input-group">
+          <input type="checkbox" id="past-events" name="past">
+          <label for="past-events">Прошедшие</label>
+        </div>
+      </section>
+    #}
+    <a href="/about.html" class="page-header__nav-about-link">О сообществе</a>
+
+    {% include "mobile-menu.njk" %}
+  </nav>
+</header>
