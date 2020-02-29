@@ -4,7 +4,7 @@
   "description": "Сайт сообщества разработчиков Нижнего Новгорода",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "9.7.x",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
