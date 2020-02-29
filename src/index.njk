@@ -5,7 +5,9 @@ layout: layout.njk
 <div class="page-main__title">
   <h1>Мероприятия</h1>
 </div>
+
 <section class="page-main__nav page-main__nav--tablet filters">
+  {#
   <div class="filters__input-group">
     <input type="checkbox" id="future-events-tablet" name="future" checked>
     <label for="future-events-tablet">Предстоящие</label>
@@ -14,6 +16,7 @@ layout: layout.njk
     <input type="checkbox" id="past-events-tablet" name="past">
     <label for="past-events-tablet">Прошедшие</label>
   </div>
+  #}
 </section>
 <section class="page-main__content events">
   <ul class="events__list">

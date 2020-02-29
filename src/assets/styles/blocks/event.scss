@@ -7,7 +7,7 @@
   }
 
   &--past {
-    display: none;
+    // display: none;
 
     @media (max-width: $mobile-max) {
       display: grid;
@@ -16,7 +16,7 @@
 
   &:last-of-type {
     @media (max-width: $mobile-max) {
-      display: none;
+      // display: none;
     }
   }
 }
