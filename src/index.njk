@@ -27,7 +27,7 @@ permalink: index.html
         <a href="{{ event.url }}" class="event__link" aria-label="Перейти на страницу мероприятия">
           <h2 class="event__title">{{ event.data.title }}</h2>
           <p class="event__description">
-            <span class="event__date">{{ event.data.dateAndTime }}</span>
+            <span class="event__date">{{ event.data.date | ruDate }}</span>
             <span class="event__address"> / {{ event.data.address }}</span>
           </p>
 
