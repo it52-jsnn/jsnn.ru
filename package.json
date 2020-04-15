@@ -30,6 +30,10 @@
     "stylelint": "13.3.x",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
+  "resolutions": {
+    "@babel/compat-data": "^7.9.0",
+    "@babel/preset-env": "7.9.5"
+  },
   "scripts": {
     "clean": "run-s clean:*",
     "clean:cache": "rimraf ./.cache",
