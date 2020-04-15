@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
    * @link https://www.11ty.io/docs/copy/
    */
   eleventyConfig.addPassthroughCopy({ './src/assets/img/logo.svg': 'assets/logo.svg' });
+  eleventyConfig.addPassthroughCopy('CNAME');
 
   eleventyConfig.addFilter('ruDate', (value) => (
     capitalize(value.toLocaleString('ru', {
