@@ -4,7 +4,6 @@
   "description": "Сайт сообщества JavaScript разработчиков Нижнего Новгорода",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@babel/compat-data": "^7.9.0",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.7.6",
     "browser-sync": "2.26.7",
@@ -30,6 +29,10 @@
     "rimraf": "^3.0.2",
     "stylelint": "13.3.x",
     "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "resolutions": {
+    "@babel/compat-data": "^7.9.0",
+    "@babel/preset-env": "7.9.5"
   },
   "scripts": {
     "clean": "run-s clean:*",
