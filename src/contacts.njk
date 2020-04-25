@@ -11,21 +11,21 @@ permalink: "/contacts.html"
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="contacts__social-list">
       <li>
-        <a href="#" aria-label="Мы на гитхабе" class="contacts__social-link">
+        <a href="{{ github }}" aria-label="Мы на гитхабе" class="contacts__social-link">
           <svg>
             <use xlink:href="/assets/sprite_auto.svg#icon-github" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Мы в телеграме" class="contacts__social-link">
+        <a href="{{ telegram }}" aria-label="Мы в телеграме" class="contacts__social-link">
           <svg>
             <use xlink:href="./assets/sprite_auto.svg#icon-telegram" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Мы на ютуб" class="contacts__social-link">
+        <a href="{{ youtube }}" aria-label="Мы на ютуб" class="contacts__social-link">
           <svg>
             <use xlink:href="./assets/sprite_auto.svg#icon-youtube" />
           </svg>
@@ -33,7 +33,7 @@ permalink: "/contacts.html"
       </li>
     </ul>
     <div class="contacts__links">
-      <a href="mailto:me@r3nya.ru" class="contacts__email">me@r3nya.ru</a>
+      <a href="mailto:{{ email }}" class="contacts__email">{{ email }}</a>
     </div>
     <ul class="copyright">
       <li>
