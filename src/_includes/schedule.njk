@@ -42,13 +42,32 @@ layout: layout.njk
           <h2 class="event-agenda__title">
             {{ speech.title }}
           </h2>
-          <p class="event-agenda__speaker">
-            <span class="event-agenda__speaker-name">
-              {{ speech.speaker }}
-            </span>
 
-            {% if speech.company %}
-              <span class="event-agenda__speaker-company">/ {{ speech.company }}</span>
+          <p class="event-agenda__speaker">
+            {% if speech.speaker %}
+              <span class="event-agenda__speaker-name">
+                {{ speech.speaker }}
+              </span>
+
+              {% if speech.company %}
+                <span class="event-agenda__speaker-company">/ {{ speech.company }}</span>
+              {% endif %}
+            {% endif %}
+
+            {% if speech.speakers %}
+              {% for person in speech.speakers %}
+                <span class="event-agenda__speaker-name">
+                  {{ person.name }}
+                </span>
+
+                {% if person.company %}
+                  <span class="event-agenda__speaker-company">/ {{ person.company }}</span>
+                {% endif %}
+
+                {% if not loop.last %}
+                  <br>
+                {% endif %}
+              {% endfor %}
             {% endif %}
           </p>
 
