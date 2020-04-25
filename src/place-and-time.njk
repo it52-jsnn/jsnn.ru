@@ -9,7 +9,8 @@ permalink: /events/{{ event.data.id }}/place-and-time.html
 
 <div class="page-main__title page-main__title--event">
   <h1>{{ event.data.title }}</h1>
-  <span class="page-main__status">Предстоящие</span>
+  {# Todo #}
+  {# <span class="page-main__status">Предстоящие</span> #}
 </div>
 <section class="page-main__nav">
   <ul class="event-navigation">
@@ -20,7 +21,7 @@ permalink: /events/{{ event.data.id }}/place-and-time.html
       <a class="event-navigation__link event-navigation__link--active">Место и время</a>
     </li>
     <li>
-      <a class="event-navigation__link" href="{{ event.data.registrationLink }}" target="_blank" rel="noopener"">Регистрация</a>
+      <a class="event-navigation__link" href="{{ event.data.registrationLink }}" target="_blank" rel="noopener">Регистрация</a>
     </li>
   </ul>
 </section>
