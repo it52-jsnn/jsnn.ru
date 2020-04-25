@@ -13,8 +13,15 @@ designerContact: galadedyukhinaa@gmail.com
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="{{ title }}">
-    <title>{{ title }}</title>
+
+    {% if title %}
+      <meta name="description" content="{{ title }}">
+      <title>{{ title }}</title>
+    {% else %}
+      <meta name="description" content="{{ description }}">
+      <title>{{ description }}</title>
+    {% endif %}
+
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
