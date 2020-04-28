@@ -38,6 +38,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "e2e:ci": "concurrently \"npm start\" \"npm run e2e\"",
     "e2e": "jest --runInBand --forceExit --detectOpenHandles",
     "e2e:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --forceExit --detectOpenHandles",
     "webp": "gulp webp",
@@ -72,6 +73,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
     "del": "^5.1.0",
     "normalize-scss": "^7.0.1"
   }

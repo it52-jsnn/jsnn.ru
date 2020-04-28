@@ -4,7 +4,7 @@ const globalTimeouts = {
 	checkValueTimeout: 3000
 };
 
-const origin = process.env.CI ? 'https://jsnn.ru' : 'http://localhost:8080';
+const origin = process.env.CI ? 'http://172.17.0.2:8080' : 'http://localhost:8080';
 
 const pageUrls = {
   main: `${origin}/`,
