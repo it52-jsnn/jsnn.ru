@@ -20,9 +20,7 @@ jobs:
       uses: ianwalter/puppeteer@3.0.0
       with:
         args: npm ci
-    - name: Run Puppeteer Tests
+    - name: Run Puppeteer tests
       uses: ianwalter/puppeteer@3.0.0
       with:
         args: npm run e2e:ci
-      env:
-        CI: true
