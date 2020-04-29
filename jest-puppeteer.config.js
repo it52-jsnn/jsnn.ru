@@ -10,7 +10,7 @@ module.exports = {
 		headless,
 		args,
 		executablePath: process.env.CI ? 'google-chrome-stable' : null,
-		ignoreHTTPSErrors: true,
+		defaultViewport: null
 	},
 	exitOnPageError: false
 };
