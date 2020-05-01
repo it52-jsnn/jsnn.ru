@@ -5,7 +5,7 @@ const getEventData = async (eventId, page = global.page) => {
 
   await page.waitForSelector(element(eventId));
 
-  return page.evaluate((titleSelector, dateSelector, addressSelector, tagSelector) => {
+  return page.evaluate(([titleSelector, dateSelector, addressSelector, tagSelector]) => {
 
     const title = document.querySelector(titleSelector).innerText;
     const date = document.querySelector(dateSelector).innerText;
@@ -19,7 +19,7 @@ const getEventData = async (eventId, page = global.page) => {
       eventTags
     };
 
-  }, title(eventId), date(eventId), address(eventId), tag(eventId));
+  }, [title(eventId), date(eventId), address(eventId), tag(eventId)]);
 };
 
 module.exports = {
