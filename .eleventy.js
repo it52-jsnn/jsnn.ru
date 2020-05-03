@@ -1,5 +1,4 @@
-const capitalize = require('lodash.capitalize');
-
+const { ruDateConverter } = require('./utils/filters');
 module.exports = function(eleventyConfig) {
   /**
    * Add custom watch targets
@@ -16,14 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ './src/assets/img/logo.svg': 'assets/logo.svg' });
   eleventyConfig.addPassthroughCopy('CNAME');
 
-  eleventyConfig.addFilter('ruDate', (value) => (
-    capitalize(value.toLocaleString('ru', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        weekday: 'long'
-    }).replace(' г.', ''))
-  ));
+  eleventyConfig.addFilter('ruDate', ruDateConverter);
 
   // Eleventy configuration
   return {

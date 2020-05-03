@@ -78,3 +78,6 @@ Thumbs.db
 .cache
 
 dist
+
+#e2e
+e2e/test-run-configuration/events-list.js
