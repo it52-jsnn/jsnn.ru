@@ -1,0 +1,71 @@
+---
+layout: layout.njk
+pagination:
+  data: tags
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag.name }}.html
+---
+
+<div class="page-main__title">
+  <h1>#{{ tag.name }}</h1>
+</div>
+
+<section class="page-main__content speeches-by-tags">
+  <ul class="speeches-by-tags__list">
+    {%- for speech in tag.speeches | reverse -%}
+      <li class="speeches-by-tags__item">
+
+        <h2 class="speeches-by-tags__title">
+          {{ speech.title }}
+        </h2>
+
+        <div class="speeches-by-tags__info">
+
+          <div class="speeches-by-tags__speeche-details">
+            <a class="speeches-by-tags__event-link" href="{{speech.eventUrl}}">
+              <span>{{ speech.eventTitle }}</span>
+            </a>
+
+            <p class="speeches-by-tags__speaker">
+              {% if speech.speaker %}
+                <span class="speeches-by-tags__speaker-name">
+                  {{ speech.speaker }}
+                </span>
+
+                {% if speech.company %}
+                  <span class="speeches-by-tags__speaker-company">/ {{ speech.company }}</span>
+                {% endif %}
+              {% endif %}
+
+              {% if speech.speakers %}
+                {% for person in speech.speakers %}
+                  <span class="speeches-by-tags__speaker-name">
+                    {{ person.name }}
+                  </span>
+
+                  {% if person.company %}
+                    <span class="speeches-by-tags__speaker-company">/ {{ person.company }}</span>
+                  {% endif %}
+
+                  {% if not loop.last %}
+                    <br>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </p>
+
+          </div>
+
+          {% if speech.description %}
+            <div class="speeches-by-tags__description">
+              <p>{{ speech.description }}</p>
+            </div>
+          {% endif %}
+
+        </div>
+
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
