@@ -47,13 +47,6 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist
 
-      - name: Run Puppeteer tests against jsnn.ru
-        uses: ianwalter/puppeteer@3.0.0
-        with:
-          args: npm run e2e:ci
-        env:
-          POST_DEPLOY: true
-
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:

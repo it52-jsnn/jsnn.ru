@@ -1,10 +1,10 @@
-name: E2E
+name: E2E Production
 
 on:
   push:
     branches:
       - '*'
-      - '!master'
+      # - 'master'
 
 jobs:
   build:
@@ -22,7 +22,9 @@ jobs:
       uses: Quo0/puppeteer@7e61ac77d51a9eb21f1f9abbd16c8a0d14cedfc2
       with:
         args: npm ci
-    - name: Run Puppeteer tests against Dev server
+    - name: Run Puppeteer tests against jsnn.ru
       uses: Quo0/puppeteer@7e61ac77d51a9eb21f1f9abbd16c8a0d14cedfc2
       with:
         args: npm run e2e:ci
+      env:
+        TEST_PROD: true
