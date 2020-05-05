@@ -4,7 +4,7 @@ const globalTimeouts = {
 	checkValueTimeout: 3000
 };
 
-const origin = process.env.CI ? process.env.POST_DEPLOY ? 'https://jsnn.ru' : 'http://172.17.0.2:8080' : 'http://localhost:8080';
+const origin = process.env.CI ? process.env.TEST_PROD ? 'https://jsnn.ru' : 'http://172.17.0.2:8080' : 'http://localhost:8080';
 
 const pageUrls = {
   main: `${origin}/`,

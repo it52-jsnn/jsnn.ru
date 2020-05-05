@@ -15,10 +15,12 @@ const launchDevServer = () => new Promise((resolve, reject) => {
 (async () => {
   try {
 
-    !process.env.POST_DEPLOY && await launchDevServer();
+    exec('node -v').stdout.pipe(process.stdout);
+
+    !process.env.TEST_PROD && await launchDevServer();
     const testRunProcess = exec('npm run e2e');
 
-    testRunProcess.stderr.pipe(process.stderr); // logging output from Jest goes through stderr `\(._.)/`
+    testRunProcess.stderr.pipe(process.stdout); // logging output from Jest goes through stderr `\(._.)/`
     testRunProcess.on('exit', process.exit);
 
   } catch (error) {
