@@ -24,7 +24,7 @@
     "puppeteer": "^3.0.4",
     "rimraf": "^3.0.2",
     "sass": "^1.26.5",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.4.0",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
   "resolutions": {
