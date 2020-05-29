@@ -23,7 +23,7 @@
     "posthtml-include": "^1.4.3",
     "puppeteer": "^3.1.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.5",
+    "sass": "^1.26.7",
     "stylelint": "^13.5.0",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
