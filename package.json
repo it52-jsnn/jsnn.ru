@@ -6,7 +6,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.5",
-    "browser-sync": "2.26.7",
+    "browser-sync": "2.26.10",
     "cross-env": "^7.0.2",
     "eslint": "7.5.0",
     "eslint-config-htmlacademy": "0.5.2",
