@@ -5,7 +5,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "9.8.2",
+    "autoprefixer": "9.8.5",
     "browser-sync": "2.26.7",
     "cross-env": "^7.0.2",
     "eslint": "7.4.0",
