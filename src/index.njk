@@ -35,7 +35,7 @@ permalink: index.html
             <ul class="event__tags">
               {% for tag in event.data.eventTags %}
                 <li class="event__tag">
-                  <a href="#" class="event__tag-link">#{{ tag }}</a>
+                  <a href="/tags/{{ tag }}.html" class="event__tag-link">#{{ tag }}</a>
                 </li>
               {% endfor %}
             </ul>

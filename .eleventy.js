@@ -1,5 +1,13 @@
+const fs = require('fs');
+const { getSpeechesByTags } = require('./utils/markdown-parser');
 const { ruDateConverter } = require('./utils/filters');
+
 module.exports = function(eleventyConfig) {
+
+  fs.writeFileSync(
+    __dirname + '/src/tags.json',
+    JSON.stringify({ tags: Object.values(getSpeechesByTags()) }, null, 2)
+  );
   /**
    * Add custom watch targets
    *

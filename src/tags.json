@@ -1,0 +1,1240 @@
+{
+  "tags": [
+    {
+      "name": "Angular",
+      "speeches": [
+        {
+          "speaker": "Дмитрий Фролов",
+          "title": "Переход с Angular 1.2 на 2.0",
+          "timeStart": "15:00",
+          "sourceCode": "https://github.com/d42f/angular2do",
+          "slides": "https://docs.google.com/a/kugaevsky.ru/presentation/d/16zK4XFgAUbOXswwzUiG1Ij8lWS0BLttFNuCoiAlOXzk/",
+          "tags": [
+            "Angular"
+          ],
+          "eventId": 1,
+          "eventTitle": "JSNN #1",
+          "eventUrl": "/events/1/"
+        },
+        {
+          "title": "Вивисекция Ангуляра",
+          "speaker": "Николай Кугаевский",
+          "description": "Hate speech про то, почему не надо скрещивать бульдога с носорогом.",
+          "slides": "http://slides.kugaevsky.ru/vivisection.html#/",
+          "tags": [
+            "Angular"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        },
+        {
+          "title": "Angular Hybrid Application: что это, зачем, а главное как",
+          "speaker": "Динара Крылова",
+          "company": "Positive Technologies",
+          "description": "Подходы к гибридному приложению на основе двух фреймворков Angular и AngularJS.",
+          "tags": [
+            "Angular",
+            "AngularJS"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        },
+        {
+          "title": "Жизнь после Angular CLI",
+          "speaker": "Алексей Охрименко",
+          "company": "IPONWEB ltd",
+          "description": "Мы все знаем об angular-cli,оно позволяет создавать Angular приложения вызовом пары команд. Но что делать когда приложение создано? Нам нужна библиотека компонентов. Мы обсудим инструменты которые позволят нам создать множество компонентов и тестов практически автоматически.",
+          "tags": [
+            "Angular"
+          ],
+          "eventId": 9,
+          "eventTitle": "JSNN #9",
+          "eventUrl": "/events/9/"
+        },
+        {
+          "title": "Тестирование Angular фронта: из огня да в полымя",
+          "speaker": "Андрей Ермаков",
+          "company": "Тинькофф",
+          "tags": [
+            "Angular"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        },
+        {
+          "title": "Как делать крутые компоненты на Angular",
+          "speaker": "Александр Инкин",
+          "company": "Тинькофф",
+          "description": "Принципы построения и особенности Ангуляра, позволяющие создавать удобные, надёжные, гибкие и производительные компоненты.",
+          "tags": [
+            "Angular"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        }
+      ]
+    },
+    {
+      "name": "React",
+      "speeches": [
+        {
+          "speaker": "Андрей Макаров",
+          "title": "React.js, intro",
+          "slides": "http://www.slideshare.net/r3nya/reactjs-intro",
+          "tags": [
+            "React"
+          ],
+          "eventId": 1,
+          "eventTitle": "JSNN #1",
+          "eventUrl": "/events/1/"
+        },
+        {
+          "title": "Meteor + React = ?",
+          "speaker": "Павел Шалаев",
+          "description": "Две современные технологии, которые помогают ускорить разработку в несколько  раз. Обсудим, какие магические приемы позволяют совместить Meteor и React. Попробуем разобраться — белая это магия или черная. Также, я расскажу и покажу какой была жизнь с Meteor до появления React.",
+          "slides": "https://slides.com/lawrentiy/meteorreact",
+          "tags": [
+            "React",
+            "Meteor"
+          ],
+          "eventId": 2,
+          "eventTitle": "JSNN #2",
+          "eventUrl": "/events/2/"
+        },
+        {
+          "title": "Как не потеряться в экосистеме React?",
+          "speaker": "Сергей Смышляев",
+          "description": "Экосистема React со стороны может казаться слишком большой и запутанной. Mы узнаем, как постигать экосистему React постепенно, изучая только необходимое на каждом этапе",
+          "slides": "http://slides.com/sergeysmyshlyaev/deck-3#/",
+          "timeStart": "18:05",
+          "tags": [
+            "React"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        },
+        {
+          "title": "Анализ производительности в React.js",
+          "speaker": "Сергей Смышляев",
+          "description": "Что делать, когда приложение на React начинает тормозить? Я расскажу о средствах анализа производительности, наиболее частых проблемах и способах их решения на примере живых (хоть и синтетических) приложений.",
+          "slides": "https://github.com/sesm/JSNN5_react_apps_performance",
+          "tags": [
+            "React"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        },
+        {
+          "title": "React + Redux: Data flow management",
+          "speaker": "Андрей Синицын",
+          "description": "(Lightning talks) Рассмотрим некоторые типичные проблемы организации кода и архитектуры redux в приложении а так же избавимся от большого количества бойлерплейт-кода. Со стороны реакта рассмотрим проблему prop-hellа и предложим вариант решения этой проблемы",
+          "slides": "http://slides.com/andreysinitsyn-asn007/deck",
+          "tags": [
+            "React",
+            "Redux"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        },
+        {
+          "title": "Let's kill lifecycle",
+          "speaker": "Александр Шушунов",
+          "company": "EPAM Systems",
+          "description": "Не любите lifecycle, а `componentWillReceiveProps` заставляет вас плакать? Let's make React pure again! Я покажу, как lifecycle делает ваш код сложнее и добавляет в него ошибки. Расскажу, как от этого избавиться или хотя бы спрятать.",
+          "tags": [
+            "React"
+          ],
+          "eventId": 11,
+          "eventTitle": "JSNN #11",
+          "eventUrl": "/events/11/"
+        },
+        {
+          "title": "Sagas vs thunks",
+          "speaker": "Олег Хлевнов",
+          "company": "Smartbics",
+          "description": "Разбор и сравнение двух популярных способов работы сайд-эффектами в проектах на React",
+          "tags": [
+            "React",
+            "Redux-Saga"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        },
+        {
+          "title": "Стилизация реакт приложений",
+          "speaker": "Антон Кастрицкий",
+          "company": "Yandex",
+          "description": "Блицдоклад. Рассмотрим самые популярные подходы к стилизации приложений в контексте современного веба. Выделим их плюсы и минусы, а так же поговорим про новый подход, который мы разработали, создавая дизайн систему Яндекс Маркета.",
+          "tags": [
+            "React"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        },
+        {
+          "title": "React Memo … Wtf?",
+          "speaker": "Макаров Андрей",
+          "description": "Блицдоклад",
+          "tags": [
+            "React"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        }
+      ]
+    },
+    {
+      "name": "Gulp",
+      "speeches": [
+        {
+          "speaker": "Николай Кугаевский",
+          "title": "Галп для сборки статики / Asset Pipeline with Gulp",
+          "slides": "http://slides.kugaevsky.ru/gulp-assets-pipeline.html#/",
+          "tags": [
+            "Gulp"
+          ],
+          "eventId": 1,
+          "eventTitle": "JSNN #1",
+          "eventUrl": "/events/1/"
+        }
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "speeches": [
+        {
+          "speaker": "Дмитрий Родичев",
+          "title": "ExtJS 5",
+          "slides": "http://noroot.github.io/slides/extjs/",
+          "tags": [
+            "ExtJS"
+          ],
+          "eventId": 1,
+          "eventTitle": "JSNN #1",
+          "eventUrl": "/events/1/"
+        }
+      ]
+    },
+    {
+      "name": "Meteor",
+      "speeches": [
+        {
+          "speaker": "Павел Шалаев",
+          "title": "Meteor.js или как сделать стартап в одиночку",
+          "slides": "http://slides.com/lawrentiy/meteorintroduce#/",
+          "tags": [
+            "Meteor"
+          ],
+          "eventId": 1,
+          "eventTitle": "JSNN #1",
+          "eventUrl": "/events/1/"
+        },
+        {
+          "title": "Meteor + React = ?",
+          "speaker": "Павел Шалаев",
+          "description": "Две современные технологии, которые помогают ускорить разработку в несколько  раз. Обсудим, какие магические приемы позволяют совместить Meteor и React. Попробуем разобраться — белая это магия или черная. Также, я расскажу и покажу какой была жизнь с Meteor до появления React.",
+          "slides": "https://slides.com/lawrentiy/meteorreact",
+          "tags": [
+            "React",
+            "Meteor"
+          ],
+          "eventId": 2,
+          "eventTitle": "JSNN #2",
+          "eventUrl": "/events/2/"
+        },
+        {
+          "title": "Meteor: Как собрать приложение из пакетов",
+          "speaker": "Дмитрий Манжасов",
+          "description": "В докладе будет рассмотрена архитектура Meteor-приложения, состоящего из  одних пакетов (packages), достоинства и недостатки такого подхода. Также будет рассказано о том, как создавать пакеты для Meteor, как писать для них юнит-тесты и как собирать из них готовое приложение",
+          "slides": "http://dim2man.github.io/meteor-build-app-from-packages/",
+          "tags": [
+            "Meteor"
+          ],
+          "eventId": 2,
+          "eventTitle": "JSNN #2",
+          "eventUrl": "/events/2/"
+        },
+        {
+          "title": "Что осталось от MeteorJS",
+          "speaker": "Павел Шалаев",
+          "description": "В процессе своего развития платформа пошла по пути активной интеграции, а не замыкания в себе. Посмотрим, пошло ли это ей на пользу. Удалось ли решить проблемы и требования, предъявляемые профессиональным сообществом.",
+          "slides": "http://slides.com/lawrentiy/historyofmeteorjs#/",
+          "tags": [
+            "Meteor"
+          ],
+          "eventId": 4,
+          "eventTitle": "JSNN #4",
+          "eventUrl": "/events/4/"
+        }
+      ]
+    },
+    {
+      "name": "Webpack",
+      "speeches": [
+        {
+          "title": "Webpack в действии",
+          "speaker": "Андрей Макаров",
+          "description": "Еще один модный бандлер JS",
+          "slides": "http://www.slideshare.net/r3nya/hey-webpack",
+          "tags": [
+            "Webpack"
+          ],
+          "eventId": 2,
+          "eventTitle": "JSNN #2",
+          "eventUrl": "/events/2/"
+        },
+        {
+          "title": "Что даёт нам Webpack: устройство бандла",
+          "speaker": "Андрей Синицын",
+          "description": "Разберём, что внутри у бандла вебпака, как это собирается, и как это всё можно использовать себе на пользу",
+          "tags": [
+            "Webpack"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        }
+      ]
+    },
+    {
+      "name": "React Native",
+      "speeches": [
+        {
+          "title": "React Native",
+          "speaker": "Сергей Смышляев",
+          "description": "Пользователи мобильных приложений ждут от вас нативного внешнего вида и плавной анимации. Однако процесс разработки с помощью нативных иснтрументов iOS/Android идёт непривычно медленно по меркам веб-разработчиков. В данном докладе мы расскажем, как React Native подходит к данным проблемам, чем отличается от других гибридных платформ, и проиллюстрируем процесс разработки в виде live-coding сессии.",
+          "slides": "http://slides.com/sergeysmyshlyaev/deck/#/",
+          "video": "https://youtu.be/FLSrZwPYWeg",
+          "tags": [
+            "React Native"
+          ],
+          "eventId": 2,
+          "eventTitle": "JSNN #2",
+          "eventUrl": "/events/2/"
+        },
+        {
+          "title": "Работа с анимациями в React Native",
+          "speaker": "Шрамко Антон",
+          "description": "Подходы к анимациям, понимание того как они работают, дополнительные библиотеки по работе с анимациями",
+          "slides": "http://slides.com/friktor/react-native-animations#/",
+          "sourceCode": "https://github.com/friktor/react-animations-example-it52-jsnn-4",
+          "tags": [
+            "React Native"
+          ],
+          "eventId": 4,
+          "eventTitle": "JSNN #4",
+          "eventUrl": "/events/4/"
+        }
+      ]
+    },
+    {
+      "name": "Middleman",
+      "speeches": [
+        {
+          "title": "Про Middleman и простое создание статических сайтов",
+          "speaker": "Алексей Авдеев",
+          "description": "Обзор gem middleman и его возможностей, собственный опыт работы с ним",
+          "slides": "http://www.slideshare.net/AlexeyAvdeev1/middleman-61006895",
+          "timeStart": "15:15",
+          "tags": [
+            "Middleman"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        }
+      ]
+    },
+    {
+      "name": "Gsap",
+      "speeches": [
+        {
+          "title": "GSAP SVG Animations",
+          "speaker": "Дмитрий Шлюгаев",
+          "description": "basic animation, svg source, live coding on codepen platform",
+          "slides": "http://www.slideshare.net/DmitryShlyugaev/gsap-svg",
+          "demo": "http://codepen.io/dmitryshlyugaev/pen/KzRPKj",
+          "timeStart": "15:50",
+          "tags": [
+            "Gsap"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        }
+      ]
+    },
+    {
+      "name": "Npm",
+      "speeches": [
+        {
+          "title": "NPM scripts",
+          "speaker": "Андрей Макаров",
+          "description": "Небольшой рассказ о встроенных возможностях npm",
+          "slides": "https://r3nya.github.io/automation-with-npm-scripts/",
+          "timeStart": "16:30",
+          "tags": [
+            "Npm"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        }
+      ]
+    },
+    {
+      "name": "Ionic",
+      "speeches": [
+        {
+          "title": "Про сахар для Ionic и автосборку под все платформы",
+          "speaker": "Николай Кугаевский",
+          "description": "Использование препроцессоров в Ionic Framework: coffeescript, jade, sass. Автоматизированная сборка под iOS и OS X без запуска Xcode",
+          "timeStart": "17:10",
+          "tags": [
+            "Ionic"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        }
+      ]
+    },
+    {
+      "name": "Mithril",
+      "speeches": [
+        {
+          "title": "Разработка микровиджетов с использованием реактивных микро-фреймворков на примере Mithril",
+          "speaker": "Антон Шрамко",
+          "description": "Обзор реактивных микро-фреймворков, что это такое. Зачем они нужны, в каких ситуациях практически незаменимы. Детальный обзор Mithril, подготовка окружения для разработки, сахарок. Пример использования и написания с использованием микрофреймворка",
+          "slides": "http://slides.com/friktor/deck#/",
+          "timeStart": "18:20",
+          "timeEnd": "19:00",
+          "tags": [
+            "Mithril"
+          ],
+          "eventId": 3,
+          "eventTitle": "JSNN #3",
+          "eventUrl": "/events/3/"
+        }
+      ]
+    },
+    {
+      "name": "Stylelint",
+      "speeches": [
+        {
+          "title": "Stylelint — как и зачем линтить CSS",
+          "speaker": "Андрей Ситник",
+          "company": "Evil Martians",
+          "description": "Рассмотрим все линтеры для CSS. На примере Stylelint и Stylefmt объясним, как правильно использовать линтер в организации коллектива.",
+          "slides": "http://slides.com/ai/stylelint-ru",
+          "tags": [
+            "Stylelint"
+          ],
+          "eventId": 4,
+          "eventTitle": "JSNN #4",
+          "eventUrl": "/events/4/"
+        }
+      ]
+    },
+    {
+      "name": "CSS Grid",
+      "speeches": [
+        {
+          "title": "Привет, CSS Grid Layout",
+          "speaker": "Макаров Андрей",
+          "description": "CSS Grid Layout – удобный механизм расположения контента по виртуальной сетке",
+          "slides": "https://r3nya.github.io/css-grid/",
+          "tags": [
+            "CSS Grid"
+          ],
+          "eventId": 4,
+          "eventTitle": "JSNN #4",
+          "eventUrl": "/events/4/"
+        }
+      ]
+    },
+    {
+      "name": "Tests",
+      "speeches": [
+        {
+          "title": "Автоматическое тестирование front-end приложения",
+          "speaker": "Михаил Ангелов",
+          "company": "Ѣ",
+          "description": "Рассказ про варианты автоматических тестов SPA приложений Практические примеры unit, integration, end-2-end тестов",
+          "slides": "https://mikhail-angelov.github.io/presentation-test-front-end/",
+          "tags": [
+            "Tests"
+          ],
+          "eventId": 4,
+          "eventTitle": "JSNN #4",
+          "eventUrl": "/events/4/"
+        },
+        {
+          "title": "Unit тесты в NodeJS",
+          "speaker": "Кирилл Новиков",
+          "description": "Немного теории, Обзор инструментов (Mocha, Sinon, Chai, Istanbul, Proxyquire, Faker), примеры использования всего этого",
+          "slides": "https://github.com/kirill3333/jsnn_6/blob/master/Unit%20testing%20in%20Node%20JS.pdf",
+          "tags": [
+            "Tests"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        },
+        {
+          "title": "Тестируем пользовательские сценарии вместе с Гермионой",
+          "speaker": "Николай Ильченко",
+          "company": "Yandex",
+          "tags": [
+            "Tests"
+          ],
+          "eventId": 7,
+          "eventTitle": "JSNN #7",
+          "eventUrl": "/events/7/"
+        },
+        {
+          "title": "Анимация в браузере",
+          "speaker": "Антон Кастрицкий",
+          "description": "Как тестировать анимированный интерфейс и оптимизировать анимацию для улучшения работы на слабых устройствах",
+          "tags": [
+            "Tests",
+            "Performance"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        },
+        {
+          "title": "Как не писать код самому, делегируем наши проблемы AST",
+          "speaker": "Никита Сидоров",
+          "company": "Yandex",
+          "description": "Рассмотрим проблему написания автотестов на обфусицированные React-компоненты и страницы. Кратко пробежимся по основам использования AST в реальном проекте на примере автогенерации селекторов для React-компонент, используя библиотеку reselector.",
+          "tags": [
+            "AST",
+            "Tests"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        }
+      ]
+    },
+    {
+      "name": "Riot",
+      "speeches": [
+        {
+          "title": "Обзор Riot.js",
+          "speaker": "Михаил Ангелов",
+          "company": "Ѣ",
+          "description": "Я расскажу о свежей библиотеке для разработки пользовательского интерфейса RIOT.js и сравню её с популярными современными решениями. Также поделюсь вариантами её использования.",
+          "slides": "https://mikhail-angelov.github.io/presentation-riot/#/",
+          "demo": "https://mikhail-angelov.github.io/presentation-riot/demo/",
+          "tags": [
+            "Riot"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        }
+      ]
+    },
+    {
+      "name": "LoopBack",
+      "speeches": [
+        {
+          "title": "LoopBack.io",
+          "speaker": "Дмитрий Родичев",
+          "description": "Расскажу о профессиональном фреймворке Node.js для создания API от IBM. Поговорим об инструменте для создания и развёртывания типовых REST API сервисов с минимальным количеством кода и о том, как легко его настроить. Также речь пойдёт о клиентских SDK для многих популярных платформ и о способности LoopBack.io работать не только с MongoDB.",
+          "slides": "https://noroot.github.io/slides/loopback.io/",
+          "tags": [
+            "LoopBack"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        }
+      ]
+    },
+    {
+      "name": "RxJS",
+      "speeches": [
+        {
+          "title": "Использование RxJS для связывания компонентов приложения",
+          "speaker": "Максим Голованёв",
+          "description": "Клиентскую часть современного веб-приложения уже сложно представить без модульности, а такая структура предполагает большое количество внутренних связей. И если всё состояние приложения укладывается в 10-20 полей, проще всего хранить такое состояние в одном месте. Но когда для хранения состояния требуется 100 полей, проще сделать так, чтобы каждый компонент хранил, обрабатывал и передавал другим свою небольшую часть состояния. В этом докладе я расскажу, как организовать передачу состояния между компонентами при помощи RxJS.",
+          "slides": "https://amayun.github.io/rxjs/",
+          "tags": [
+            "RxJS"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "speeches": [
+        {
+          "title": "Новые фичи в CSS",
+          "speaker": "Андрей Макаров",
+          "description": "(Lightning talks)",
+          "slides": "https://r3nya.github.io/new-css-features/",
+          "tags": [
+            "CSS"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "speeches": [
+        {
+          "title": "Transpiler-free Python for your browser",
+          "speaker": "Артем Малышев",
+          "description": "(Lightning talks)",
+          "slides": "http://proofit404.github.io/talks/transpiler-free-python-for-your-browser/#/",
+          "tags": [
+            "General"
+          ],
+          "eventId": 5,
+          "eventTitle": "JSNN #5",
+          "eventUrl": "/events/5/"
+        },
+        {
+          "title": "Фронтенд для миллионов",
+          "speaker": "Анастасия Горячева",
+          "company": "Авито",
+          "description": "Требовательность аудитории Авито растет постоянно. Мир, технологии – всё меняется. Ожидания пользователей всё выше и выше. Как меняемся мы сами, чтобы дарить больше радости нашим пользователям? Почему эти изменения – внезапно – помогают нам самим развиваться в профессии? Какие боли и выгоды приносит текущий стек технологий, при чем тут дизайн-платформа, есть ли жизнь без react, куда мы катим open source и что будет дальше.",
+          "slides": "https://www.slideshare.net/negoryacheva/ss-77015972",
+          "tags": [
+            "General"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        },
+        {
+          "title": "Делаем правильно изоморфные приложения",
+          "speaker": "Павел Малышев",
+          "company": "MUST lab",
+          "description": "Интересные кейсы с использованием изоморфных JS-приложений.",
+          "tags": [
+            "General"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        },
+        {
+          "title": "Куда катится веб",
+          "speakers": [
+            {
+              "name": "Cергей Рубанова",
+              "company": "BeerJS"
+            },
+            {
+              "name": "Андрей Яманов",
+              "company": "MoscowJS"
+            }
+          ],
+          "description": "В Вебе появляется все больше API, позволяющих взаимодействовать с железом и приближающих веб-приложения к приложениям нативным. Такие технологие как PWA, WebAssembly, Houdini, разделяемая память, Worklet’ы просто не могут не изменить наши подходы к написанию приложений. Попробуем разобраться как будет выглядеть веб будущего и как к этому подготовиться нам, разработчикам",
+          "tags": [
+            "General"
+          ],
+          "eventId": 9,
+          "eventTitle": "JSNN #9",
+          "eventUrl": "/events/9/"
+        },
+        {
+          "title": "Роутер как у сына маминой подруги",
+          "speaker": "Павел Малышев",
+          "company": "MUST lab",
+          "description": "Когда мы разрабатываем веб-приложения, мы часто используем маршрутизатор. Каждый фреймворк имеет свой собственный, хотя все они используют одни и те же принципы. Или нет? Действительно ли существующие маршрутизаторы достаточно гибки, чтобы покрыть все кейсы веб-разработки? Или \"танцы с бубном\" - это неотъемлемая часть работы с маршрутизацией. Давайте ответим на все эти вопросы, сравнив различные маршрутизаторы, попутно разработав свой собственный подход.",
+          "tags": [
+            "General"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        },
+        {
+          "title": "Жизнь до Runtime",
+          "speaker": "Никита Сидоров",
+          "company": "Yandex",
+          "description": "Поговорим о построении графа зависимостей программных модулей в NodeJs приложении: рассмотрим CommonJs и ESM системы модулей, их обратную совместимость и переход от одной к другой. Обсудим, как анализ графа зависимостей может упростить жизнь разработчиков — избавить вас от лишней работы, улучшить аппетит и помочь скинуть лишние 5кг, ведь лето уже на дворе.",
+          "tags": [
+            "General",
+            "Node"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        },
+        {
+          "title": "Как применить интерактивные карты для визуализации имунного ответа",
+          "speakers": [
+            {
+              "name": "Дарья Завьялова",
+              "company": "НИИ БМТ ПИМУ"
+            },
+            {
+              "name": "Глеб Мялик",
+              "company": "Тинькофф"
+            }
+          ],
+          "tags": [
+            "General",
+            "ML"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        }
+      ]
+    },
+    {
+      "name": "GraphQL",
+      "speeches": [
+        {
+          "title": "Ни RESТа себе! GraphQL is Coming",
+          "speaker": "Артем Малышев",
+          "description": "Уже очень давно стандартом де-факто для дизайна web API стал REST. Но вот GitHub и Facebook анонсировали поддержку GraphQL API. Зачем они это сделали? Стоит ли нам сделать тоже самое? Какие инструменты для этого предоставляет экосистема Python? Хорошо ли они спроектированы? REST уже всё? Ответы на эти вопросы и не только вы узнаете из моего доклада.",
+          "slides": "http://proofit404.github.io/talks/graphql-relay",
+          "tags": [
+            "GraphQL"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        }
+      ]
+    },
+    {
+      "name": "Service Workers",
+      "speeches": [
+        {
+          "title": "SW",
+          "speaker": "Макаров Андрей",
+          "description": "Доклад про технологию Service Workers – описание, настройка, сравнение с AppCache.",
+          "slides": "https://r3nya.github.io/sw-intro/",
+          "tags": [
+            "Service Workers"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        }
+      ]
+    },
+    {
+      "name": "ES6",
+      "speeches": [
+        {
+          "title": "Генераторы в JavaScript",
+          "speaker": "Михаил Ангелов",
+          "company": "Ѣ",
+          "description": "(Lightning talks) Принцип действия и особенности использования",
+          "slides": "https://mikhail-angelov.github.io/presentation-generators/#/",
+          "tags": [
+            "ES6"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        }
+      ]
+    },
+    {
+      "name": "Redux",
+      "speeches": [
+        {
+          "title": "React + Redux: Data flow management",
+          "speaker": "Андрей Синицын",
+          "description": "(Lightning talks) Рассмотрим некоторые типичные проблемы организации кода и архитектуры redux в приложении а так же избавимся от большого количества бойлерплейт-кода. Со стороны реакта рассмотрим проблему prop-hellа и предложим вариант решения этой проблемы",
+          "slides": "http://slides.com/andreysinitsyn-asn007/deck",
+          "tags": [
+            "React",
+            "Redux"
+          ],
+          "eventId": 6,
+          "eventTitle": "JSNN #6",
+          "eventUrl": "/events/6/"
+        }
+      ]
+    },
+    {
+      "name": "Styled Components",
+      "speeches": [
+        {
+          "title": "Styled Components — иной взгляд на стилизацию React-компонентов",
+          "speaker": "Кирилл Новиков",
+          "company": null,
+          "links": [
+            {
+              "title": "Слайды",
+              "url": "https://kirill3333.github.io/jsnn7/"
+            }
+          ],
+          "tags": [
+            "Styled Components"
+          ],
+          "eventId": 7,
+          "eventTitle": "JSNN #7",
+          "eventUrl": "/events/7/"
+        }
+      ]
+    },
+    {
+      "name": "Performance",
+      "speeches": [
+        {
+          "title": "Клиентская производительность",
+          "speaker": "Роман Парадеев",
+          "tags": [
+            "Performance"
+          ],
+          "eventId": 7,
+          "eventTitle": "JSNN #7",
+          "eventUrl": "/events/7/"
+        },
+        {
+          "title": "Анимация в браузере",
+          "speaker": "Антон Кастрицкий",
+          "description": "Как тестировать анимированный интерфейс и оптимизировать анимацию для улучшения работы на слабых устройствах",
+          "tags": [
+            "Tests",
+            "Performance"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "speeches": [
+        {
+          "title": "Типографика в вебе",
+          "speaker": "Максим Алёшин",
+          "tags": [
+            "Typography"
+          ],
+          "eventId": 7,
+          "eventTitle": "JSNN #7",
+          "eventUrl": "/events/7/"
+        },
+        {
+          "title": "Типографика в вебе",
+          "speaker": "Антон Кастрицкий",
+          "company": "Yandex",
+          "description": "Разберём на примерах, как и из чего собираются интерфейсы. Поговорим про тексты, их оформление, доступность и производительность в контексте современных веб-приложений.",
+          "tags": [
+            "Typography"
+          ],
+          "eventId": 11,
+          "eventTitle": "JSNN #11",
+          "eventUrl": "/events/11/"
+        }
+      ]
+    },
+    {
+      "name": "Vue",
+      "speeches": [
+        {
+          "title": "Vue.js с нуля",
+          "speaker": "Дмитрий Злыгин",
+          "company": "Мера",
+          "links": [
+            {
+              "title": "Слайды",
+              "url": "https://docs.google.com/presentation/d/1BZdnxu7aaPSeqXPHkTHGan_Keu2SUywyrnlEmzl7OQU/edit?usp=sharing"
+            }
+          ],
+          "tags": [
+            "Vue"
+          ],
+          "eventId": 7,
+          "eventTitle": "JSNN #7",
+          "eventUrl": "/events/7/"
+        }
+      ]
+    },
+    {
+      "name": "WebRTC",
+      "speeches": [
+        {
+          "title": "Краткий экскурс в технологию WebRTC",
+          "speaker": "Леонид Вайцехович",
+          "company": "Positive Technologies",
+          "description": "Как устроена технология и как её использовать",
+          "tags": [
+            "WebRTC"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "speeches": [
+        {
+          "title": "Angular Hybrid Application: что это, зачем, а главное как",
+          "speaker": "Динара Крылова",
+          "company": "Positive Technologies",
+          "description": "Подходы к гибридному приложению на основе двух фреймворков Angular и AngularJS.",
+          "tags": [
+            "Angular",
+            "AngularJS"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        },
+        {
+          "title": "Героический AngularJS, или для чего добавлять Redux-Observable",
+          "speaker": "Иван Николаев",
+          "company": "Positive Technologies",
+          "tags": [
+            "AngularJS",
+            "Redux-Observable"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "Redux-Observable",
+      "speeches": [
+        {
+          "title": "Героический AngularJS, или для чего добавлять Redux-Observable",
+          "speaker": "Иван Николаев",
+          "company": "Positive Technologies",
+          "tags": [
+            "AngularJS",
+            "Redux-Observable"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "L10n",
+      "speeches": [
+        {
+          "title": "Localization process: о важности локализации и взаимодействии между командами",
+          "speaker": "Олег Пименов",
+          "company": "Positive Technologies",
+          "description": "Об опыте локализации интерфейса для англоязычных пользователей",
+          "tags": [
+            "L10n"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "speeches": [
+        {
+          "title": "Загрузка изображений в браузер",
+          "speaker": "Александр Тихонов",
+          "description": "Альтернативный способы и полезные кейсы",
+          "tags": [
+            "Images"
+          ],
+          "eventId": 8,
+          "eventTitle": "JSNN #8",
+          "eventUrl": "/events/8/"
+        }
+      ]
+    },
+    {
+      "name": "Desing",
+      "speeches": [
+        {
+          "title": "Поиск новых форм",
+          "speaker": "Никита Глазов",
+          "company": "Yandex",
+          "description": "Я хочу рассказать, как я участвовал в разработке проекта \"Поиск новых форм\" от Яндеска ([ya.ru/design](https://ya.ru/design))",
+          "tags": [
+            "Desing"
+          ],
+          "eventId": 9,
+          "eventTitle": "JSNN #9",
+          "eventUrl": "/events/9/"
+        }
+      ]
+    },
+    {
+      "name": "Svelte",
+      "speeches": [
+        {
+          "title": "Магически исчезающий JS фреймворк",
+          "speaker": "Павел Малышев",
+          "company": "MUST lab",
+          "description": "Поговорим о новом тренде AoT-компиляторов в ванилу на примере SvelteJS",
+          "tags": [
+            "Svelte"
+          ],
+          "eventId": 9,
+          "eventTitle": "JSNN #9",
+          "eventUrl": "/events/9/"
+        },
+        {
+          "title": "Управление состоянием в Svelte",
+          "speaker": "Павел Малышев",
+          "company": "MUST Lab",
+          "description": "Разберемся на примерах как работать с состоянием в приложениях на SvelteJS. Что такое Svelte Store и чем он отличается от Redux.",
+          "tags": [
+            "Svelte"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        },
+        {
+          "title": "Жизнь после Svelte",
+          "speaker": "Павел Малышев",
+          "company": "MustLab",
+          "description": "Что делать, если хочется ещё больше ванилы? Готовы ли веб-стандарты для решения прикладных задач разработки? Есть ли жизнь после Svelte?",
+          "tags": [
+            "Svelte"
+          ],
+          "eventId": 11,
+          "eventTitle": "JSNN #11",
+          "eventUrl": "/events/11/"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "speeches": [
+        {
+          "title": "Сетевое взаимодействие в WEB: аудит производительности",
+          "speaker": "Борис Стрельников",
+          "company": "Тинькофф.ру",
+          "description": "Обсудим основы TCP, CDN, эволюцию HTTP, нюансы беспроводных сетей, покажем как внедрить аудит сетевого взаимодейтсвия для сайта и закончим кратким обзором полезных инструментов и утилит.",
+          "tags": [
+            "Network"
+          ],
+          "eventId": 9,
+          "eventTitle": "JSNN #9",
+          "eventUrl": "/events/9/"
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "speeches": [
+        {
+          "title": "Строим Back-end на node.js, идём в highload",
+          "speaker": "Илья Утов",
+          "description": "В докладе рассмотрим создание масштабируемых, отказоустойчивых server-side проектов на node.js. Поговорим о v8 и чуточку зацепим libuv",
+          "tags": [
+            "Node"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        },
+        {
+          "title": "Жизнь до Runtime",
+          "speaker": "Никита Сидоров",
+          "company": "Yandex",
+          "description": "Поговорим о построении графа зависимостей программных модулей в NodeJs приложении: рассмотрим CommonJs и ESM системы модулей, их обратную совместимость и переход от одной к другой. Обсудим, как анализ графа зависимостей может упростить жизнь разработчиков — избавить вас от лишней работы, улучшить аппетит и помочь скинуть лишние 5кг, ведь лето уже на дворе.",
+          "tags": [
+            "General",
+            "Node"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        }
+      ]
+    },
+    {
+      "name": "Flow",
+      "speeches": [
+        {
+          "title": "От чего не спасает Flow",
+          "speaker": "Олег Хлевнов",
+          "company": "Smartbics",
+          "description": "Краткий рассказ о случаях бесполезной работы с типами.",
+          "tags": [
+            "Flow"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        }
+      ]
+    },
+    {
+      "name": "ESNext",
+      "speeches": [
+        {
+          "title": "Обзор фич ESNext (ES7, ES8, ES9)",
+          "speaker": "Кирилл Новиков",
+          "description": "Рассказ про ES 2016/2017/2018/Next",
+          "tags": [
+            "ESNext"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        }
+      ]
+    },
+    {
+      "name": "AST",
+      "speeches": [
+        {
+          "title": "Как не писать код самому, делегируем наши проблемы AST",
+          "speaker": "Никита Сидоров",
+          "company": "Yandex",
+          "description": "Рассмотрим проблему написания автотестов на обфусицированные React-компоненты и страницы. Кратко пробежимся по основам использования AST в реальном проекте на примере автогенерации селекторов для React-компонент, используя библиотеку reselector.",
+          "tags": [
+            "AST",
+            "Tests"
+          ],
+          "eventId": 10,
+          "eventTitle": "JSNN #10",
+          "eventUrl": "/events/10/"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "speeches": [
+        {
+          "title": "Цена типизации",
+          "speaker": "Назим Гафаров",
+          "company": "Yandex",
+          "description": "Типизация обходится дорого. Сегодня ты пишешь дженерики, завтра дженерики от дженериков, а послезавтра программируешь на типах и выносишь из дома вещи ради новой дозы типизации. Я расскажу, как получить преимущества типизации, прилагая минимум усилий или вовсе не используя типизацию. Обозначу условия, при которых типизация окупается. Доклад будет интересен командам, которые присматриваются к TypeScript или Flow, но боятся, что затраты на внедрение превысят выгоду.",
+          "tags": [
+            "TypeScript"
+          ],
+          "eventId": 11,
+          "eventTitle": "JSNN #11",
+          "eventUrl": "/events/11/"
+        }
+      ]
+    },
+    {
+      "name": "Tensorflow",
+      "speeches": [
+        {
+          "title": "Tensorflow.js - создаем, обучаем и используем нейронную сеть не отходя от браузера",
+          "speaker": "Максим Теричев",
+          "company": "Лад",
+          "tags": [
+            "Tensorflow"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        }
+      ]
+    },
+    {
+      "name": "Ember",
+      "speeches": [
+        {
+          "title": "Modern Ember.js",
+          "speaker": "Андрей Фель",
+          "company": "RetailNext",
+          "description": "Обзор основных преимуществ Ember. Дивный новый мир Ember Octane.",
+          "tags": [
+            "Ember"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        }
+      ]
+    },
+    {
+      "name": "Redux-Saga",
+      "speeches": [
+        {
+          "title": "Sagas vs thunks",
+          "speaker": "Олег Хлевнов",
+          "company": "Smartbics",
+          "description": "Разбор и сравнение двух популярных способов работы сайд-эффектами в проектах на React",
+          "tags": [
+            "React",
+            "Redux-Saga"
+          ],
+          "eventId": 12,
+          "eventTitle": "JSNN #12",
+          "eventUrl": "/events/12/"
+        }
+      ]
+    },
+    {
+      "name": "ESlint",
+      "speeches": [
+        {
+          "title": "Пишем ESLint-правила",
+          "speaker": "Леонид Лебедев",
+          "company": "Yandex",
+          "description": "Если стандартный набор правил не покрывает все ваши потребности, то нужно начать писать свои. В докладе расскажу зачем создают правила для ESLint, почему мы стали это делать, а также попробуем создать своё правило.",
+          "tags": [
+            "ESlint"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        }
+      ]
+    },
+    {
+      "name": "ML",
+      "speeches": [
+        {
+          "title": "Как применить интерактивные карты для визуализации имунного ответа",
+          "speakers": [
+            {
+              "name": "Дарья Завьялова",
+              "company": "НИИ БМТ ПИМУ"
+            },
+            {
+              "name": "Глеб Мялик",
+              "company": "Тинькофф"
+            }
+          ],
+          "tags": [
+            "General",
+            "ML"
+          ],
+          "eventId": 13,
+          "eventTitle": "JSNN #13",
+          "eventUrl": "/events/13/"
+        }
+      ]
+    }
+  ]
+}

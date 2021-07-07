@@ -1,0 +1,90 @@
+.speeches-by-tags {
+  position: relative;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+
+.speeches-by-tags__list {
+  width: 100%;
+
+  @include reset-list;
+}
+
+.speeches-by-tags__item {
+  margin-bottom: 34px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.speeches-by-tags__title {
+  margin: 0;
+  margin-bottom: 9px;
+
+  @include main-text(26px, 31px, $bold);
+  color: $accent-text-color;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 4px;
+
+    @include main-text(18px, 24px, $bold);
+  }
+}
+
+.speeches-by-tags__speeche-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.speeches-by-tags__event-link {
+  margin: 0 25px 0px 0;
+
+  @include main-text(18px, 21px, $normal);
+  color: $accent-text-color;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 4px;
+
+    @include main-text(12px, 14px, $normal);
+  }
+}
+
+.speeches-by-tags__speaker {
+  margin: 0;
+}
+
+.speeches-by-tags__speaker-name {
+  @include main-text(18px, 21px, $normal);
+  color: $speaker-name-color;
+
+  @media (max-width: $mobile-max) {
+    @include main-text(12px, 14px, $normal);
+  }
+}
+
+.speeches-by-tags__speaker-company {
+  @include additional-text(18px, 21px, $normal);
+  color: $accent-color;
+
+  @media (max-width: $mobile-max) {
+    @include additional-text(12px, 14px, $normal);
+  }
+}
+
+.speeches-by-tags__description {
+  margin: 0;
+
+  @include main-text(14px, 20px, $normal);
+  color: $main-color;
+
+  @media (max-width: $mobile-max) {
+    padding-right: 10px;
+
+    @include main-text(13px, 20px, $normal);
+  }
+}
