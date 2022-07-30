@@ -12,7 +12,7 @@
     "eslint-config-htmlacademy": "0.5.2",
     "gulp": "4.0.x",
     "gulp-rename": "^2.0.0",
-    "gulp-svgstore": "^7.0.1",
+    "gulp-svgstore": "^9.0.0",
     "jest": "^27.0.6",
     "jest-puppeteer": "^4.4.0",
     "lodash.capitalize": "^4.2.1",
