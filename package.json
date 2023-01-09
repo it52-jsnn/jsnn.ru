@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Сайт сообщества JavaScript разработчиков Нижнего Новгорода",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.8",
     "browser-sync": "2.27.5",
