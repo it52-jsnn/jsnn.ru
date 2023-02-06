@@ -9,7 +9,7 @@
     "browser-sync": "2.27.5",
     "cross-env": "^7.0.3",
     "eslint": "8.3.0",
-    "eslint-config-htmlacademy": "0.5.2",
+    "eslint-config-htmlacademy": "9.0.0",
     "gulp": "4.0.x",
     "gulp-rename": "^2.0.0",
     "gulp-svgstore": "^7.0.1",
